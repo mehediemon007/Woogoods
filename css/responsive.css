@@ -1,0 +1,6 @@
+/* Min Width 1400px */
+@media only screen and (min-width:1400px){
+    .container{
+        max-width: 1380px !important;
+    }
+}
