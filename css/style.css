@@ -556,6 +556,8 @@ input::placeholder{
 }
 
 .single-hoz-card .card-content p{
+    font-size: .81rem;
+    font-weight: var(--font-weight-medium);
     margin-top: 20px;
 }
 
@@ -563,8 +565,26 @@ input::placeholder{
     height: 100%;
 }
 
+/* Verticle Card */
+
+.single-ver-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.single-ver-card .card-content{
+    padding: 18px;
+}
+
 /* Trending Store */
 
 .trending-stores{
     column-count: 4;
+}
+
+/* Shop Name */
+
+.shops{
+    column-count: 6;
 }
