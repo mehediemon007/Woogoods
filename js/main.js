@@ -24,6 +24,13 @@
         margin:16
     })
 
+    $(".five-column-slider").owlCarousel({
+        items:5,
+        dots:false,
+        nav:false,
+        margin:16
+    })
+
     // Language Switcher  active
 
     $(".lang-switcher").on("click", function(e){
