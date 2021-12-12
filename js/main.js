@@ -25,9 +25,10 @@
     })
 
     $(".five-column-slider").owlCarousel({
-        items:5,
+        items:1,
         dots:false,
         nav:false,
+        center:false,
         margin:16
     })
 

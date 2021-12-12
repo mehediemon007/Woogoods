@@ -831,6 +831,56 @@ input::placeholder{
     font-weight: 900;
 }
 
+.price-filter-widget input{
+    width: 80px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid var(--text-color-light);
+    border-radius: 5px;
+    padding-left: 16px;
+}
+
+.checkbox-widget{
+    display: flex;
+    gap: 24px;
+}
+
+.checkbox-widget input{
+    margin-right: 10px;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    --webkit-appearance: none;
+    width: 18px;
+    height: 17px;
+    line-height: 17px;
+    padding: 0;
+    border: 1px solid var(--text-color-light);
+    border-radius: 4px;
+    cursor: pointer;
+    vertical-align: baseline;
+}
+
+input[type="checkbox"]:checked{
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+}
+  
+input[type="checkbox"]::after{
+position: absolute;
+content: "\f00c";
+display: none;
+font-size: 14px;
+color: var(--white-color);
+font-family: "Font Awesome 5 Free";
+font-weight: 600;
+}
+  
+input[type="checkbox"]:checked::after{
+display: block;
+}
+
 .sorting-menu{
     display: inline-block;
     background-color: var(--white-color);
@@ -857,6 +907,41 @@ input::placeholder{
 
 .filtered-products{
     column-count: 5;
+}
+
+/* Paginatuon */
+
+.woo-pagination-wpr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white-color);
+    padding: 16px 32px;
+}
+
+.pagination-item{
+    display: inline-block;
+    padding: 5px 16px;
+    border: 1px solid var(--text-color-light);
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: var(--transition);
+}
+
+.pagination-item:hover,
+.pagination-item.active{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.page-input input{
+    width: 70px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid var(--text-color-light);
+    border-radius: 5px;
+    margin: 0 10px;
 }
 
 /* Footer */
