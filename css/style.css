@@ -307,19 +307,22 @@ input::placeholder{
     cursor: pointer;
 }
 
-.woo-categories-nav .category-list{
+
+.category-list{
+    height: max-content;
     background-color: var(--white-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     transform: scaleY(1);
     transform-origin: top;
     transition: var(--transition);
+    line-height: 35px;
 }
 
 .woo-categories-nav.active .category-list{
     transform: scaleY(0);
 }
 
-.woo-categories-nav .category-list li a{
+.category-list li a{
     display: inline-block;
     width: 100%;
     padding: 4px 0 4px 16px;
@@ -341,6 +344,10 @@ input::placeholder{
 
 .category-list li a i{
     font-size: 1rem;
+    margin-right: 14px;
+}
+
+.woo-categories-nav .category-list li a i{
     margin-right: 5px;
 }
 
@@ -1015,6 +1022,67 @@ input[type="checkbox"]:checked::after{
 
 .categori-menu .sub-menu{
     margin-left: 10px;
+}
+
+/* All Categories */
+
+.wow-all-categoris-wpr{
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-column-gap: 24px;
+}
+
+.single-sub-category{
+    margin: 10px 0;
+}
+
+.category-items{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-row-gap: 5px;
+    height: 0;
+    overflow: hidden;
+    background-color: var(--white-color);
+    overflow-y: auto;
+    padding: 0 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.single-sub-category.active .category-items{
+    height: max-content;
+    padding:20px;
+}
+
+.category-items a{
+    display: inline-block;
+}
+
+.category-label{
+    position: relative;
+    width: 280px;
+    height: 40px;
+    background-color: var(--white-color);
+    padding: 0  20px;
+    line-height: 40px;
+}
+
+.category-label::after{
+    position: absolute;
+    content: "\f078";
+    right: 20px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: var(--font-weight-bold);
+    transition: var(--transition);
+}
+
+.single-sub-category.active .category-label{
+    color: var(--primary-color);
+}
+
+.single-sub-category.active .category-label::after{
+    content: "\f077";
+    color: var(--text-color);
 }
 
 /* Footer */

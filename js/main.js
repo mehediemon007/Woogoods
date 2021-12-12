@@ -141,3 +141,15 @@
     });
 
 })(jQuery);
+
+(function(){
+
+    const categoryBox = document.getElementsByClassName("single-sub-category");
+
+    for ( i = 0; i < categoryBox.length ; i++){
+        categoryBox[i].addEventListener("click",function(){
+            this.classList.toggle("active")
+        })
+    }
+    
+})()
