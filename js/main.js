@@ -25,10 +25,9 @@
     })
 
     $(".five-column-slider").owlCarousel({
-        items:1,
+        items:5,
         dots:false,
         nav:false,
-        center:false,
         margin:16
     })
 
@@ -55,5 +54,90 @@
             $(".show-more-btn").fadeOut('slow')
         }
     })
+
+    // Categori sidebar load-more
+
+    // $(".color-list > li").slice(0, 13).show();
+    // $(".color-widget .view-more").on("click", function(e){
+    //     e.preventDefault()
+    //     $(".color-list > li:hidden").slice(0, 4).slideDown()
+    //     if ($(".color-list > li:hidden").length == 0) {
+    //         $(".color-widget .view-more").hide()
+    //     }
+    // })
+
+    
+
+    // $(".size-list > li").slice(0, 4).show();
+    // $(".size-widget .view-more").on("click", function(e){
+    //     e.preventDefault()
+    //     $(".size-list > li:hidden").slice(0, 2).slideDown()
+    //     if ($(".size-list > li:hidden").length == 0) {
+    //         $(".size-widget .view-more").hide()
+    //     }
+    // })
+
+    // $(".material-list > li").slice(0, 5).show();
+    // $(".material-widget .view-more").on("click", function(e){
+    //     e.preventDefault()
+    //     $(".material-list > li:hidden").slice(0, 2).slideDown()
+    //     if ($(".material-list > li:hidden").length == 0) {
+    //         $(".material-widget .view-more").hide()
+    //     }
+    // })
+
+    // $(".print-list > li").slice(0, 5).show();
+    // $(".print-widget .view-more").on("click", function(e){
+    //     e.preventDefault()
+    //     $(".print-list > li:hidden").slice(0, 2).slideDown()
+    //     if ($(".print-list > li:hidden").length == 0) {
+    //         $(".print-widget .view-more").hide()
+    //     }
+    // })
+
+    // $(".brand-list > a").slice(0, 4).show();
+    // $(".brand-widget .view-more").on("click", function(e){
+    //     e.preventDefault()
+    //     $(".brand-list > a:hidden").slice(0, 4).slideDown()
+    //     if ($(".brand-list > a:hidden").length == 0) {
+    //         $(".brand-widget .view-more").hide()
+    //     }
+    // })
+
+
+    $('.print-widget  .infinite-container').simpleLoadMore({
+        item: '.load-more',
+        count: 4,
+        itemsToLoad: 3,
+        easing:"slide"
+    });
+
+    $('.brand-widget  .infinite-container').simpleLoadMore({
+        item: '.load-more',
+        count: 4,
+        itemsToLoad: 2,
+        easing:"fade"
+    });
+
+    $('.material-widget  .infinite-container').simpleLoadMore({
+        item: '.load-more',
+        count: 5,
+        itemsToLoad: 2,
+        easing:"slide"
+    });
+
+    $('.color-widget  .infinite-container').simpleLoadMore({
+        item: '.load-more',
+        count: 13,
+        itemsToLoad: 4,
+        easing:"slide"
+    });
+
+    $('.size-widget  .infinite-container').simpleLoadMore({
+        item: '.load-more',
+        count: 5,
+        itemsToLoad: 2,
+        easing:"slide"
+    });
 
 })(jQuery);
