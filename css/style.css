@@ -343,9 +343,9 @@ input::placeholder{
     background-color: #F3F3F3;
 }
 
-/* .category-list li .has-children:hover + .sub-menu{
+.category-list li:hover > .sub-menu{
    display: block;
-} */
+}
 
 .category-list li a i{
     font-size: 1rem;
@@ -367,12 +367,13 @@ input::placeholder{
 
 .sub-menu{
     position: absolute;
+    display: none;
     top:0;
     left: 100%;
     width: 100%;
     background-color: var(--white-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-    z-index: 10;
+    z-index: 2;
     transition: var(--transition);
 }
 
