@@ -1200,6 +1200,64 @@ input[type="checkbox"]:checked::after{
     cursor: pointer;
 }
 
+/* Single Products Details */
+
+.product-reviews .nav{
+    border-bottom: 1px solid rgba(128,128,128,.5);
+}
+
+.product-reviews .nav-item{
+    padding: 0 20px;
+}
+
+.product-reviews .nav-link{
+    color: var(--text-color);
+    padding: 16px 0;
+    margin-right: 40px;
+}
+
+.product-reviews .nav-link.active{
+    font-weight: var(--font-weight-medium);
+    border-bottom: 2px solid var(--text-color);
+}
+
+.reviews-content .tab-pane{
+    padding: 40px 20px;
+}
+
+.overview-list p{
+    padding: 4px 0;
+}
+
+.customer-ratings{
+    display: grid;
+    grid-template-columns:  1fr 2fr;
+}
+
+.single-rating-stat{
+    display: grid;
+    grid-template-columns: 50px 400px 100px;
+}
+
+.rating-points .product-ratings i{
+    font-size: 26px;
+}
+
+.progress-bar{
+    background-color: #FF6D27;
+}
+
+.product-reviews-wpr{
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    grid-column-gap: 24px;
+}
+
+.widget-title{
+    padding: 0 0 20px 8px;
+    border-bottom: 1px solid rgba(128,128,128,.5);
+}
+
 /* Footer */
 
 .woo-footer{
