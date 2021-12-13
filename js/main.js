@@ -146,6 +146,30 @@
         easing:"slide"
     });
 
+    // Close Category Tabs
+
+    var tabClose = $(".tab-close");
+    var tabLinks = $(".category-list-2 .nav-link")
+
+    for(var i = 0 ; i < tabClose.length ; i++){
+        $(tabClose[i]).click(function(){
+            if($(this).parent().parent().hasClass("active")){
+
+                $(this).parent().parent().removeClass("active")
+
+                navLinksRemove();
+            }
+        })
+    }
+
+    function navLinksRemove(){
+        for ( var i=0; i< tabLinks.length ; i++){
+            if($(tabLinks[i]).hasClass("active")){
+                $(tabLinks[i]).removeClass("active")
+            }
+        }
+    }
+
 })(jQuery);
 
 (function(){

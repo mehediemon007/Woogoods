@@ -321,6 +321,7 @@ input::placeholder{
     transform-origin: top;
     transition: var(--transition);
     line-height: 35px;
+    z-index: 10;
 }
 
 .woo-categories-nav.active .category-list{
@@ -587,7 +588,7 @@ input::placeholder{
 
 .woo-sub-banner{
     background-color: #9BBCFF;
-    padding: 90px 0;
+    padding: 90px 0 100px;
 }
 
 .sub-banner-content-wpr{
@@ -621,7 +622,7 @@ input::placeholder{
     background-color: var(--white-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     padding: 12px 0;
-    margin: -25px 0 24px;
+    margin-top: -25px;
 }
 
 .callToAction-nav-menu a:hover,
@@ -1150,6 +1151,45 @@ input[type="checkbox"]:checked::after{
 .single-sub-category.active .category-label::after{
     content: "\f077";
     color: var(--text-color);
+}
+
+/* Category List 2 */
+
+.category-list-2{
+    display: flex;
+    gap: 16px;
+}
+
+.category-list-2 .nav-link{
+    display: inline-block;
+    width: 256px;
+    height: 60px;
+    color: var(--text-color);
+    background-color: var(--white-color);
+    border-radius: 10px;
+    padding: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 60px;
+}
+
+.category-list-2 .nav-link i{
+    font-size: 20px;
+    vertical-align: baseline;
+    margin-right: 24px;
+}
+
+.tab-content .category-items{
+    height: max-content;
+    overflow-y: visible;
+    padding: 20px;
+}
+
+.category-tab-heading{
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 20px 0;
+    background-color: var(--white-color);
 }
 
 /* Footer */
