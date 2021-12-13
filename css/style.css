@@ -221,6 +221,10 @@ input::placeholder{
     color: var(--primary-color) !important;
 }
 
+.light-bg{
+    background-color: var(--body-bg-color) !important;
+}
+
 .light-color{
     color: var(--text-color-light) !important;
 }
@@ -964,7 +968,7 @@ input[type="checkbox"]:checked::after{
     background-color: var(--white-color);
     border-radius: 5px;
     border: 1px solid var(--text-color-light);
-    padding: 10px 0;
+    padding: 8px 0;
 }
 
 .product-toolbar .sorting-item{
