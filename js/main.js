@@ -17,6 +17,12 @@
         margin:12
     })
 
+    $(".one-column-slider").owlCarousel({
+        items:1,
+        dots:false,
+        nav:false,
+    })
+
     $(".six-column-slider").owlCarousel({
         items:6,
         dots:false,
