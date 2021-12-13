@@ -229,6 +229,10 @@ input::placeholder{
     color: var(--text-color-light) !important;
 }
 
+.dark-bg{
+    background-color: #012D50 !important;
+}
+
 .bold-font{
     font-weight: var(--font-weight-bold);
 }
