@@ -1326,10 +1326,6 @@ input[type="checkbox"]:checked::after{
     border-color: var(--primary-color);
 }
 
-.cart-btns{
-    margin-top: 92px;
-}
-
 .cart-btns a{
     display: inline-block;
     width: 200px;
@@ -1499,7 +1495,6 @@ input[type="checkbox"]:checked::after{
     height: max-content;
     background-color: var(--white-color);
     padding: 16px 16px 0;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
