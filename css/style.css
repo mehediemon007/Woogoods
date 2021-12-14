@@ -1208,6 +1208,87 @@ input[type="checkbox"]:checked::after{
 
 /* Single Products Details */
 
+.size-list span{
+    display: inline-block;
+    min-width: 28px;
+    padding: 2px 4px;
+    border-radius: 3px;
+    border:1px solid var(--text-color-light);
+    text-align: center;
+    cursor: pointer;
+}
+
+.size-list span:hover{
+    border-color: var(--primary-color);
+}
+
+.size-list span.active{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.color-list span{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.color-list span:hover,
+.color-list span.active{
+    border-color: var(--primary-color);
+}
+
+.cart-btns a{
+    display: inline-block;
+    width: 200px;
+    height: 44px;
+    color: var(--white-color);
+    text-align: center;
+    line-height: 44px;
+    border-radius: 5px;
+}
+
+.cart-btns .buy-btn{
+    background: linear-gradient(90deg, #FF5E27 0%, #FF6D27 100%);
+}
+
+.single-product-details .product-rating-stats{
+    width: 290px;
+    background-color: var(--white-color);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.product-rating-stats p:last-child{
+    font-size: .75rem;
+    margin-top: 4px;
+}
+
+.product-rating-stats .single-rating-stat{
+    display: grid;
+    grid-template-columns: 50px 145px 70px;
+    grid-column-gap:5px;
+    align-items: center;
+}
+
+.product-rating-stats .single-rating-stat .progress{
+    height: 8px;
+}
+
+.product-rating-stats .single-rating-stat p,
+.product-rating-stats .single-rating-stat span{
+    font-size: .75rem
+}
+
 .reviews-tab-links {
     border-bottom: 1px solid rgba(128,128,128,.5);
 }
@@ -1276,6 +1357,14 @@ input[type="checkbox"]:checked::after{
 
 #cm-review .customer-info img{
     border-radius: 50%;
+}
+
+.review-side-widget{
+    height: max-content;
+    background-color: var(--white-color);
+    padding: 16px 16px 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .widget-title{
