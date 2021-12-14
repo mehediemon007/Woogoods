@@ -178,6 +178,61 @@
         }
     }
 
+    // Slick Slider
+
+    var path = window.location.pathname;
+    var page = path.split("/").pop();
+    if(page=="product-details.html"){
+
+        $('.slider-thumb').slick({
+            // autoplay: true,
+            vertical: true,
+            infinite: true,
+            verticalSwiping: true,
+            slidesPerRow: 5,
+            slidesToShow: 5,
+            asNavFor: '.product-slider-preview',
+            focusOnSelect: true,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        vertical: false,
+                    }
+                },
+                {
+                    breakpoint: 479,
+                    settings: {
+                        vertical: false,
+                        slidesPerRow: 3,
+                        slidesToShow: 3,
+                    }
+                },
+            ]
+        });
+
+        $('.product-slider-preview').slick({
+            // autoplay: true,
+            vertical: true,
+            infinite: true,
+            slidesPerRow: 1,
+            slidesToShow: 1,
+            asNavFor: '.slider-thumb',
+            arrows: false,
+            draggable: false,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        vertical: false,
+                        fade: true,
+                    }
+                },
+            ]
+        });
+    }
+
 })(jQuery);
 
 (function(){

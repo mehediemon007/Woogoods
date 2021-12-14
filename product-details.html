@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" type="text/css" href="css/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Template Stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
@@ -180,16 +181,172 @@
         <div class="woo-product-details">
             <div class="container">
                 <div class="row">
-                    <div class="single-product-details">
-                        <div class="col-6">
-                            <div class="product-image-slide">
-                                
+                    <div class="woo-breadcrumb my-3">
+                        <a href="#" class="breadcrumb-link ps-0">Home</a>
+                        <a href="#" class="breadcrumb-link">Men's Clothing</a>
+                        <a href="#" class="breadcrumb-link active">Men's Set</a>
+                    </div>
+                    <div class="detailed-single-product mb-4">
+                        <div class="single-product-details">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="product-image-slider d-flex">
+
+                                        <ul class="slider-thumb">
+                                            <li class="type-image"><img src="images/products/green-shirt-thumb.jpg" alt="Green Shirt"></li>
+                                            <li class="type-image"><img src="images/products/white-shirt-thumb.jpg" alt="White Shirt"></li>
+                                            <li class="type-image"><img src="images/products/green-shirt-thumb.jpg" alt="green shirt"></li>
+                                            <li class="type-image"><img src="images/products/white-shirt-thumb.jpg" alt="white shirt"></li>
+                                            <li class="type-image"><img src="images/products/green-shirt-thumb.jpg" alt="Green Shirt"></li>
+                                        </ul>
+
+                                        <ul class="product-slider-preview">
+                                            <li>
+                                                <img src="images/products/shirt-lg.jpg" alt="Shirt">
+                                            </li>
+                                            <li>
+                                                <img src="images/products/white-shirt.jpg" alt="White Shirt">
+                                            </li>
+                                            <li>
+                                                <img src="images/products/shirt-lg.jpg" alt="Green Shirt">
+                                            </li>
+                                            <li>
+                                                <img src="images/products/white-shirt.jpg" alt="White Shirt">
+                                            </li>
+                                            <li>
+                                                <img src="images/products/shirt-lg.jpg" alt="Green Shirt">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="product-description position-relative pe-2">
+                                        <h6>Mens Head Halloween Floral Short Sleeve Shirt - Black Shirt Shirt</h6>
+                                        <div class="product-ratings">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i> <i class="fas fa-caret-down text-dark"></i></span>
+                                            <span class="text-dark">4.5</span>
+                                            <span class="text-dark">100k Reviews</span>
+                                        </div>
+                                        <div class="product-category">
+                                            <p><span>Brand:</span><span>Cat's Eye</span><span>Men from City Boy</span></p>
+                                            <div>
+                                                <span><i class="fas fa-share-alt"></i></span>
+                                                <span><i class="fas fa-heart primary-color"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="product-price d-flex align-items-center my-3">
+                                            <h3 class="mb-0">US$199.99</h3>
+                                            <div class="price-less">
+                                                <del class="mx-2">US$ 399.99</del>
+                                                <span class="price-off">50% OFF</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-size mb-20">
+                                            <p>SIZE</p>
+                                            <div class="size-list mt-1">
+                                                <span class="active">S</span>
+                                                <span>M</span>
+                                                <span>L</span>
+                                                <span>XL</span>
+                                                <span>2XL</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-color mb-20">
+                                            <p>COLOR</p>
+                                            <div class="color-list mt-1">
+                                                <span class="active"><img src="images/color-blk.png" alt="black color"></span>
+                                                <span><img src="images/color-mgenta.png" alt="magenta color"></span>
+                                                <span><img src="images/color-ppl.png" alt="purple color"></span>
+                                                <span><img src="images/color-sky-blu.png" alt="sky blue color"></span>
+                                                <span><img src="images/color-ylo.png" alt="yellow color"></span>
+                                                <span><img src="images/color-gn.png" alt="green color"></span>
+                                            </div>
+                                        </div>
+                                        <div class="product-quantity mb-20">
+                                            <p>QTY</p>
+                                            <div class="mt-1">
+                                                <span class="quantity-change">-</span>
+                                                <span class="mx-2">1</span>
+                                                <span class="quantity-change">+</span>
+                                            </div>
+                                            <p class="product-status mt-2"><b>In stock.</b>Ships in 24 hours</p>
+                                        </div>
+                                        <div class="product-rating-stats">
+                                            <p>4.5 out of 5</p>
+                                            <div class="rating-stats">
+                                                <div class="single-rating-stat">
+                                                    <span>5 star</span> 
+                                                    <div class="progress">
+                                                         <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <p><span>98k</span> <span>(63.2%)</span></p>
+                                                </div>
+                                                <div class="single-rating-stat">
+                                                    <p>4 star</p> 
+                                                    <div class="progress">
+                                                         <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <p><span>98k</span> <span>(18.2%)</span></p>
+                                                </div>
+                                                <div class="single-rating-stat">
+                                                    <span>3 star</span> 
+                                                    <div class="progress">
+                                                         <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <p><span>0</span> <span>(0%)</span></p>
+                                                </div>
+                                                <div class="single-rating-stat">
+                                                    <span>2 star</span> 
+                                                    <div class="progress">
+                                                         <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <p><span>200</span> <span>(9.1%)</span></p>
+                                                </div>
+                                                <div class="single-rating-stat">
+                                                    <span>1 star</span> 
+                                                    <div class="progress">
+                                                         <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <p><span>50</span> <span>(9.6%)</span></p>
+                                                </div>
+                                            </div>
+                                            <p>View all 359 Reviews</p>
+                                        </div>
+                                        <div class="cart-btns">
+                                            <a href="#" class="buy-btn me-3">Buy Now</a>
+                                            <a href="#" class="primary-bg">Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div class="product-description">
-                                <h6>Mens Head Halloween Floral Short Sleeve Shirt - Black Shirt Shirt</h6>
-                                <div class="product-ratings">
+                        <div class="product-shop-details">
+                            <div class="shop-meta-data pt-0">
+                                <p class="meta-title d-flex align-items-center justify-content-between">Shipping Address <i class="fas fa-exclamation-circle"></i></p>
+                                <div class="d-flex align-items-end ps-3 mt-2">
+                                    <p class="d-flex align-items-center"><i class="fas fa-map-marker-alt text-primary"></i>Dhaka, Dhaka North, Banani
+                                        Road No. 12 - 19</p>
+                                    <a href="#" class="text-primary">Change</a>
+                                </div>
+                            </div>
+                            <div class="shop-meta-data">
+                                <p class="meta-title">Delivery Charge</p>
+                                <div class="ps-3 mt-2">
+                                    <p>Shipping: US$24.49</p>
+                                    <p>to Bangladesh via Express Shipping <span class="light-color">Estimated Delivery</span> on Dec 6th-21st,2021</p>
+                                </div>
+                            </div>
+                            <div class="shop-meta-data border-0">
+                                <p class="meta-title">Sold by</p>
+                                 <div class="shop-name d-flex align-items-center ps-3 mt-3">
+                                    <img src="images/cats-eye.png" alt="cats-eye">
+                                    <h6 class="ms-5">Cats Eye</h6>
+                                 </div>
+                                 <div class="product-ratings my-2 ps-3">
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
@@ -198,92 +355,12 @@
                                     <span class="text-dark">4.5</span>
                                     <span class="text-dark">100k Reviews</span>
                                 </div>
-                                <div class="product-price d-flex align-items-center">
-                                    <h3 class="mb-0">US$199.99</h3>
-                                    <div class="price-less">
-                                        <del class="mx-2">US$ 399.99</del>
-                                        <span class="price-off">50% OFF</span>
-                                    </div>
-                                </div>
-                                <div class="product-size">
-                                    <p>SIZE</p>
-                                    <div class="size-list">
-                                        <span class="active">S</span>
-                                        <span>M</span>
-                                        <span>L</span>
-                                        <span>XL</span>
-                                        <span>2XL</span>
-                                    </div>
-                                </div>
-                                <div class="product-color">
-                                    <p>COLOR</p>
-                                    <div class="color-list">
-                                        <span class="active"><img src="images/color-blk.png" alt="black color"></span>
-                                        <span><img src="images/color-mgenta.png" alt="magenta color"></span>
-                                        <span><img src="images/color-ppl.png" alt="purple color"></span>
-                                        <span><img src="images/color-sky-blu.png" alt="sky blue color"></span>
-                                        <span><img src="images/color-ylo.png" alt="yellow color"></span>
-                                        <span><img src="images/color-gn.png" alt="green color"></span>
-                                    </div>
-                                </div>
-                                <div class="product-quantity">
-                                    <p>QTY</p>
-                                    <div>
-                                        <span class="product-minus"></span>
-                                        <span>1</span>
-                                        <span class="product-plus"></span>
-                                    </div>
-                                    <p class="product-status"><b>In stock.</b>Ships in 24 hours</p>
-                                </div>
-                                <div class="product-rating-stats">
-                                    <p>4.5 out of 5</p>
-                                    <div class="rating-stats">
-                                        <div class="single-rating-stat">
-                                            <span>5 star</span> 
-                                            <div class="progress">
-                                                 <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <p><span>98k</span> <span>(63.2%)</span></p>
-                                        </div>
-                                        <div class="single-rating-stat">
-                                            <p>4 star</p> 
-                                            <div class="progress">
-                                                 <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <p><span>98k</span> <span>(18.2%)</span></p>
-                                        </div>
-                                        <div class="single-rating-stat">
-                                            <span>3 star</span> 
-                                            <div class="progress">
-                                                 <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <p><span>0</span> <span>(0%)</span></p>
-                                        </div>
-                                        <div class="single-rating-stat">
-                                            <span>2 star</span> 
-                                            <div class="progress">
-                                                 <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <p><span>200</span> <span>(9.1%)</span></p>
-                                        </div>
-                                        <div class="single-rating-stat">
-                                            <span>1 star</span> 
-                                            <div class="progress">
-                                                 <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <p><span>50</span> <span>(9.6%)</span></p>
-                                        </div>
-                                    </div>
-                                    <p>View all 359 Reviews</p>
-                                </div>
-                                <div class="cart-btns">
-                                    <a href="#" class="buy-btn me-3">Buy Now</a>
-                                    <a href="#" class="primary-bg">Add To Cart</a>
+                                <div class="seller-chat d-flex justify-content-between ps-3">
+                                    <a href="#" class="primary-color"><u>Chat with seller</u></a>
+                                    <span><i class="far fa-comment-alt text-primary"></i></span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="product-shop-details">
                     </div>
                 </div>
                 <div class="row">
@@ -1005,6 +1082,7 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/simple-load-more.min.js"></script>
     <script src="js/main.js"></script>
