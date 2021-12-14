@@ -146,6 +146,14 @@
         easing:"slide"
     });
 
+    $('#cm-review').simpleLoadMore({
+        item: '.load-more',
+        count: 1,
+        itemsToLoad: 1,
+    });
+
+    $('#cm-review .load-more__btn').text("See more comment");
+
     // Close Category Tabs
 
     var tabClose = $(".tab-close");
