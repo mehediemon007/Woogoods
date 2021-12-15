@@ -1760,6 +1760,62 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
     margin-bottom: 16px;
 }
 
+.shipping-address .fa-map-marker-alt{
+    font-size: 1.25rem;
+    color: #2B87FF;
+    margin-right: 10px;
+}
+
+/* Payment Card Provider */
+
+.single-card-acc{
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.provider-logo{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+    color: var(--text-color-light);
+    border-radius: 50%;
+    border: 1px solid #808080;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 16px;
+}
+
+.single-card-acc .fa-trash-alt{
+    position: absolute;
+    font-size: 1.25rem;
+    right: 0;
+    bottom: 5px;
+}
+
+.add-account{
+    padding: 10px 20px;
+    border: 1px solid rgba(128,128,128,.5);
+    border-style: dashed;
+    border-radius: 5px;
+}
+
+.add-account .provider-logo::before{
+    position: absolute;
+    content: "+";
+    top: -4px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    color: rgba(128,128,128,.5);
+    background-color: #F3F3F3;
+    border-radius: 50%;
+    border: 1px solid rgba(128,128,128,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Footer */
 
 .woo-footer{
