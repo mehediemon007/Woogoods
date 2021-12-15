@@ -1706,6 +1706,59 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
     margin-left: 8px;
 }
 
+/* Payment Crad Details */
+
+.card-form{
+    width: max-content;
+}
+
+.woo-input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.woo-verticle-input{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.woo-input input:not([type=checkbox]){
+    width: 100%;
+    border-bottom: 1px solid rgba(128,128,128,.5);
+    background-color: transparent;
+}
+
+.woo-input input::placeholder{
+    font-size: .9rem;
+    color: var(--text-color-light);
+}
+
+.card-input-wpr{
+    width: 100%;
+    padding: 50px 24px 20px;
+    background-color: #F3F3F3;
+    border-radius: 10px;
+}
+
+.card-input-wpr label{
+    font-size: .8rem;
+    color: var(--text-color-light);
+}
+
+.card-input-wpr .woo-input input{
+    width: 100%;
+}
+
+.address-type p{
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-right: 16px;
+}
+
+.shipment-form .woo-input{
+    margin-bottom: 16px;
+}
 
 /* Footer */
 
