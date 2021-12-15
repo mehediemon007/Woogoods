@@ -197,6 +197,10 @@ input::placeholder{
     padding-bottom: 100px;
 }
 
+.pb-200{
+    padding-bottom: 200px;
+}
+
 .px-50{
     padding: 0 50px;
 }
@@ -250,6 +254,12 @@ input::placeholder{
 .woo-divider{
     display: grid;
     grid-template-columns: 1fr 350px;
+    grid-column-gap: 20px;
+}
+
+.woo-divider-rev{
+    display: grid;
+    grid-template-columns: 240px 1fr;
     grid-column-gap: 20px;
 }
 
@@ -1701,7 +1711,7 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
 }
 
 .voucher-code input{
-    width: 70%;
+    width: 68%;
     box-shadow: inset -4px 4px 4px rgba(0, 0, 0, 0.1), inset 4px -4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     padding: 8px 16px;
@@ -1714,6 +1724,7 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
     border-radius: 5px;
     margin-left: 8px;
 }
+
 
 /* Payment Crad Details */
 
@@ -1823,6 +1834,56 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Customer Account */
+
+.customer-info{
+    text-align: center;
+    padding: 20px;
+    background-color: #FF6D27;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.profile-image img{
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.customer-phone{
+    color: var(--white-color);
+    background-color: var(--text-color);
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.account-widget{
+    height: max-content;
+    background-color: var(--white-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.account-menu li a{
+    display: block;
+    padding:8px 0;
+}
+
+.account-menu li a i{
+    margin-right: 16px;
+}
+
+.account-widget .logout-btn{
+    display: inline-block;
+    width: 100%;
+    height: 36px;
+    color: var(--white-color);
+    text-align: center;
+    line-height: 36px;
+    background-color: #FF6D27;
+    border-radius: 5px;
+    margin-top: 140px;
 }
 
 /* Footer */

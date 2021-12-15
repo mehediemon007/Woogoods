@@ -37,6 +37,11 @@
         margin:16
     })
 
+    $(".viewd-products").owlCarousel({
+        loop:true,
+        margin:10
+    })
+
     // Language Switcher  active
 
     $(".lang-switcher").on("click", function(e){
