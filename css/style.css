@@ -1372,7 +1372,8 @@ input[type="checkbox"]:checked::after{
     margin-right: 8px;
 }
 
-.size-list span{
+.size-list span,
+.location-list span{
     display: inline-block;
     min-width: 28px;
     padding: 2px 4px;
