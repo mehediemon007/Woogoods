@@ -994,6 +994,10 @@ span.product-quantity{
 
 /* Ads Banner */
 
+.ads-wpr img{
+    height: 300px;
+}
+
 /* Liked Products */
 
 .woo-liked-products .woo-sec-wpr{
@@ -1348,6 +1352,11 @@ input[type="checkbox"]:checked::after{
 }
 
 /* Single Products Details */
+
+.product-name{
+    font-size: 1.20rem;
+    font-weight: var(--font-weight-medium);
+}
 
 .detailed-single-product{
     display: grid;
@@ -1780,7 +1789,7 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
     font-size: 1.25rem;
     color: var(--text-color-light);
     border-radius: 50%;
-    border: 1px solid #808080;
+    border: 1px solid var(--text-color-light);
     text-align: center;
     line-height: 50px;
     margin-right: 16px;
