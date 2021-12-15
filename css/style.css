@@ -253,7 +253,23 @@ input::placeholder{
     grid-column-gap: 20px;
 }
 
-.order-summary-widget{
+.woo-btn{
+    display: inline-block;
+    min-width: 95px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 5px;
+    border: 0.5px solid #808080;
+}
+
+.woo-primary-btn{
+    color: var(--white-color);
+    background-color: #FF6D27;
+    border-color: #FF6D27;
+}
+
+.order-summary{
     padding: 20px;
     border-radius: 10px;
     background-color: var(--white-color);
@@ -291,6 +307,74 @@ input::placeholder{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-row-gap: 20px;
+}
+
+.ordered-product-details{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-filter-label{
+    display: inline-block;
+    max-width: 310px;
+    height: 30px;
+    color: var(--text-color-light);
+    padding: 0 10px;
+    border-radius: 5px;
+    background-color: #F3F3F3;
+    line-height: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.product-filter-modal{
+    position: absolute;
+    max-width: max-content;
+    top: 20px;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: var(--transition);
+    background-color: var(--white-color);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 20px;
+    z-index: 1;
+}
+
+.product-filter-label.active + .product-filter-modal{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.order-meta-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.order-meta-data .order-quantity span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    margin: 0;
+}
+
+span.product-quantity{
+    background-color: #F3F3F3;
+}
+
+.order-cancle i{
+    font-size: 1.5rem;
+    margin-left: 10px;
 }
 
 /* Woo Header */
@@ -1520,6 +1604,64 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
 
 /* Order Preview */
 
+.step-heading p{
+    font-size: 1.25rem;
+    color: #00A84F;
+}
+
+.step-heading p i{
+    font-size: 30px;
+}
+
+.single-progress-step{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 35px;
+}
+
+.single-progress-step::before{
+    position: absolute;
+    content: "";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: .6rem;
+    color: var(--white-color);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--text-color-light);
+    border-radius: 50%;
+}
+
+.single-progress-step.checked::before{
+    content: "\f00c";
+    background-color: #00A84F;
+    border: 1px solid #00A84F;
+}
+
+.single-progress-step.current::before{
+    content: "\f111";
+    font-size: .5rem;
+    color: #00A84F;
+}
+
+.single-progress-step:not(:last-of-type):after{
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 1px;
+    top: 50%;
+    left: 38px;
+    transform: translateX(-50%);
+    background-color: #00A84F;
+}
+
 .sec-toolbar{
     display: flex;
     justify-content: space-between;
@@ -1528,7 +1670,8 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
 .woo-payment img{
     padding: 12px;
     border-radius: 5px;
-    border:1px solid var(--primary-color)
+    border:1px solid var(--primary-color);
+    margin-top: 10px;
 }
 
 .single-order{
@@ -1547,10 +1690,19 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
     border-radius: 10px;
 }
 
-.ordered-product .order-quantity{
-    position: absolute;
-    top:5px;
-    right: 0;
+.voucher-code input{
+    width: 70%;
+    box-shadow: inset -4px 4px 4px rgba(0, 0, 0, 0.1), inset 4px -4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+
+.voucher-code .voucher-btn{
+    padding: 7px 16px;
+    background-color: var(--white-color);
+    border: 0.5px solid #808080;
+    border-radius: 5px;
+    margin-left: 8px;
 }
 
 

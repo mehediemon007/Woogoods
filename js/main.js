@@ -152,6 +152,10 @@
         itemsToLoad: 1,
     });
 
+    $(".product-filter-label").click(function(){
+        $(this).toggleClass("active")
+    })
+
     $('#cm-review .load-more__btn').text("See more comment");
 
     // Close Category Tabs
