@@ -1838,6 +1838,10 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
 
 /* Customer Account */
 
+.customer-profile{
+    margin-left: -3px;
+}
+
 .customer-info{
     text-align: center;
     padding: 20px;
