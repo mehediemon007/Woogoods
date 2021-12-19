@@ -1912,7 +1912,8 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
 
 /* Order Details */
 
-.single-order-status{
+.single-order-status,
+.single-ticket{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -2004,7 +2005,8 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
     color: var(--text-color-light);
 }
 
-.notification-content p span{
+.notification-content p span,
+.single-ticket p span{
     display: inline-block;
     font-size: .81rem;
     color: var(--text-color-light);
@@ -2013,6 +2015,18 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
 
 .single-notification .customer-image img{
     border-radius: 50%;
+}
+
+.ticket-btn{
+    display: inline-block;
+    width: 280px;
+    height: 46px;
+    color: var(--white-color);
+    background: #2B87FF; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    line-height: 46px;
 }
 
 /* Footer */
