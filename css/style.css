@@ -1974,6 +1974,47 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
     background-color: #2B87FF;
 }
 
+/* Notification */
+
+.single-notification{
+    padding: 30px 20px;
+    background-color: #F3F3F3;
+    border-radius: 10px;
+}
+
+.notification-icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--white-color);
+    border-radius: 50%;
+    background-color: #FF6D27;
+}
+
+.single-notification{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 16px;
+}
+
+.notification-content p{
+    color: var(--text-color-light);
+}
+
+.notification-content p span{
+    display: inline-block;
+    font-size: .81rem;
+    color: var(--text-color-light);
+    margin:0 16px 10px 0;
+}
+
+.single-notification .customer-image img{
+    border-radius: 50%;
+}
+
 /* Footer */
 
 .woo-footer{
