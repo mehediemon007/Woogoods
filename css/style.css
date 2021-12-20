@@ -2047,6 +2047,48 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
     margin-top: 24px;
     cursor: pointer;
 }
+
+.woo-info-input .input-heading{
+    font-size: .9rem;
+    color: var(--text-color-light);
+    margin-bottom: 5px;
+}
+
+.woo-info-input input:not([type="checkbox"]),
+.woo-info-input input:not([type="radio"]){
+    width: 100%;
+    font-size: .9rem;
+    border-bottom: 1px solid var(--text-color-light);
+}
+
+.woo-info-input input::placeholder,
+.privacy-check label{
+    font-size: .9rem;
+    color: var(--text-color-light);
+}
+
+.privacy-check{
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    align-items: flex-start;
+    grid-column-gap: 10px;
+}
+
+.woo-info-input{
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+input[type="radio"]{
+    display: inline-block;
+    appearance:none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid rgba(128,128,128,.5)
+}
+
 /* Footer */
 
 .woo-footer{
