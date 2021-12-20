@@ -2029,6 +2029,24 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
     line-height: 46px;
 }
 
+/* Account Setting */
+
+.circle img{
+    border-radius: 50%;
+}
+
+.upload-button{
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    font-size: .9rem;
+    text-align: center;
+    line-height: 30px;
+    border: 0.5px solid var(--text-color-light);
+    border-radius: 5px;
+    margin-top: 24px;
+    cursor: pointer;
+}
 /* Footer */
 
 .woo-footer{
@@ -2144,3 +2162,5 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
 .footer-social-links a{
     margin-right: 4px;
 }
+
+
