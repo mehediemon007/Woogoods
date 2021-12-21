@@ -269,6 +269,49 @@
         });
     });
 
+    // Sing In-Up Form
+
+
+    $(".sign-in").click(function(){
+        $(".sign-up").removeClass("active");
+        $(this).addClass("active");
+        $(".woo-sign-up").removeClass("show")
+        $(".woo-sign-in").addClass("show")
+    })
+
+    $(".sign-up").click(function(){
+        $(".sign-in").removeClass("active");
+        $(this).addClass("active");
+        $(".woo-sign-in").removeClass("show")
+        $(".woo-sign-up").addClass("show")
+    })
+
+    $(".phone-login").click(function(){
+        $(".mail-login").removeClass("active");
+        $(this).addClass("active");
+        $(".sign-with-mail").removeClass("show")
+        $(".sign-with-phone").addClass("show")
+    })
+
+    $(".mail-login").click(function(){
+        $(".phone-login").removeClass("active");
+        $(this).addClass("active");
+        $(".sign-with-phone").removeClass("show")
+        $(".sign-with-mail").addClass("show")
+    })
+
+    // Password Type Toggle
+
+    $(".pass-input > i").click(function(){
+       $(this).toggleClass("fa-eye-slash");
+       if($(this).parents().siblings("input").attr("type") == "text"){
+          $(this).parents().siblings("input").attr("type","password")
+       }
+       else{
+        $(this).parents().siblings("input").attr("type","text")
+       }
+    })
+
 })(jQuery);
 
 (function(){

@@ -107,10 +107,8 @@ a:hover{
     color: var(--text-color);
 }
 
-input[type="email"],
-input[type="text"],
+input:not([type="checkbox"]),
 textarea,
-input[type="phone"],
 button {
     outline: none;
     border: none;
@@ -2108,10 +2106,111 @@ input[type="radio"]:checked::before{
     border: 5px solid #FF6D27;
 }
 
+/* Login In Form */
+
+.woo-sign{
+    padding: 100px 0 110px;
+}
+
+.woo-log-form{
+    position: relative;
+    left: 50%;
+    max-width: 400px;
+    background-color: var(--white-color);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    transform: translateX(-50%);
+    padding: 32px 24px;
+}
+
+.woo-log-form input:not([type="checkbox"]){
+    padding:  0 10px;
+}
+
+.woo-sign-up,
+.woo-sign-in,
+.sign-with-phone,
+.sign-with-mail{
+    display: none;
+    transition: display var(--transition);
+}
+
+.woo-sign-up.show,
+.woo-sign-in.show,
+.sign-with-phone.show,
+.sign-with-mail.show{
+    display: block;
+}
+
+.log-tab-links span,
+.sign-up-options span{
+    display: inline-block;
+    padding: 8px 20px;
+    transition: .3s;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+.log-tab-links span.active,
+.sign-up-options span.active{
+    color: var(--primary-color);
+    font-weight: var(--font-weight-medium);
+    border-bottom-color: var(--primary-color);
+}
+
+.sign-up-options span i{
+    font-size: 1.25rem;
+    margin-right: 5px;
+}
+
+.log-btn{
+    width: 100%;
+    height: 42px;
+    color: var(--white-color);
+    font-weight: var(--font-weight-medium);
+    background: linear-gradient(89.91deg, #FF6D27 0.06%, #FF3A27 99.9%);
+    box-shadow: 0px 4px 4px rgba(255, 72, 39, 0.2);
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.policy-checkbox label{
+    display: inline;
+    line-height: 20px;
+    margin:-3px 0 0 8px;
+}
+
+.pass-input{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
 /* Footer */
 
 .woo-footer{
     background-color: #012D50;
+}
+
+.woo-footer-2{
+    background-color: #012D50;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.woo-footer-2 .footer-menu a{
+    position: relative;
+    display: inline-block;
+    color: var(--white-color);
+    padding: 0 20px;
+}
+
+.footer-menu a:not(:last-of-type)::before{
+    position: absolute;
+    content: "";
+    right: 0;
+    height: 90%;
+    border: .5px solid rgba(128,128,128,.5);
 }
 
 .footer-services{
