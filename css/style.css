@@ -2109,7 +2109,8 @@ input[type="radio"]:checked::before{
 /* Login In Form */
 
 .woo-sign{
-    padding: 100px 0 110px;
+    min-height: calc(100vh - 330px);
+    padding: 100px 0;
 }
 
 .woo-log-form{
@@ -2183,6 +2184,31 @@ input[type="radio"]:checked::before{
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+.otp-source span{
+    font-size: .85rem;
+    color: var(--text-color-light);
+}
+
+.otp-number input{
+    width: 40px;
+    height: 50px;
+    background: #F3F3F3;
+    box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    margin-right: 7px;
+}
+
+.woo-sign .woo-input{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.woo-sign .woo-input label{
+    font-size: .81rem;
+    color: var(--text-color-light);
+    padding-left: 10px;
 }
 
 

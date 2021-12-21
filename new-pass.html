@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Confirm OTP</title>
+    <title>New Password</title>
 
     <!-- Inject:css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -42,25 +42,23 @@
                 <div class="woo-log-form">
                    <!-- Sign Up Form -->
                    <div class="woo-pass-recover">
-                       <h6 class="mb-3 text-center">Forgot your Password</h6>
-                       <div class="sign-up-options text-center mb-3">
-                           <span class="active border-0 "><i class="fas fa-mobile-alt"></i> Phone</span>
-                           <span class="border-0"><i class="far fa-envelope"></i> Email</span>
-                       </div>
-                       <div class="otp-source">
-                           <span>Phone No.</span>
-                           <p>Office@gmail.com</p>
-                       </div>
+                       <h6 class="mb-5 text-center">Forgot your Password</h6>
                        <form class="sign-with-phone show">
-                           <div class="otp-number p-4">
-                               <input type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
-                               <input type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
-                               <input type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
-                               <input type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
-                               <input type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
-                               <input type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
-                           </div>
-                           <button type="submit" class="log-btn m-0">Submit</button>
+                            <fieldset class="woo-input position-relative mb-4">
+                                <label for="user-pass" class="visually-hidden"></label>
+                                <input type="text" placeholder="New Password" id="user-pass">
+                                <div class="pass-input">
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </fieldset>
+                            <fieldset class="woo-input position-relative mb-4">
+                                <label for="confirm-pass" class="visually-hidden"></label>
+                                <input type="text" placeholder="Confirm Password" id="confirm-pass">
+                                <div class="pass-input">
+                                    <i class="far fa-eye"></i>
+                                </div>
+                           </fieldset>
+                            <button type="submit" class="log-btn mb-0">Reset</button>
                        </form>
                    </div>
                 </div>
