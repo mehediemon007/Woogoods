@@ -312,6 +312,28 @@
        }
     })
 
+    // Birthday Selector
+    
+    if($('.dateselector1').length){
+        $('.dateselector1').dateSelector({
+            dateFormat: "MM/DD/YYYY"
+        });
+    }
+
+    // Ticket Modal
+
+    if($(".ticket-btn").length){
+        $(".ticket-btn").click(function(){
+            $(".woo-ticket-modal").addClass("show")
+        })
+    }
+
+    if($(".modal-heading .fa-times").length){
+        $(".modal-heading .fa-times").click(function(){
+            $(".woo-ticket-modal").removeClass("show")
+        })
+    }
+    
 })(jQuery);
 
 (function(){
