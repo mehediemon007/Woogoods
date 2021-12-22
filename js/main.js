@@ -16,7 +16,7 @@
         dots:false,
         nav:true,
         navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
-        margin:12
+        margin:12,
     })
 
     $(".one-column-slider").owlCarousel({
@@ -31,7 +31,22 @@
         dots:false,
         nav:true,
         navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
-        margin:16
+        margin:16,
+        responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            768:{
+                items:3
+            },
+            992:{
+                items:4
+            },
+            1200:{
+                items:6
+            }
+        }
     })
 
     $(".five-column-slider").owlCarousel({
@@ -39,7 +54,22 @@
         dots:false,
         nav:true,
         navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
-        margin:16
+        margin:16,
+        responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            768:{
+                items:3
+            },
+            992:{
+                items:4
+            },
+            1400:{
+                items:5
+            }
+        }
     })
 
     $(".viewd-products").owlCarousel({

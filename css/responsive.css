@@ -3,6 +3,10 @@
     .container{
         max-width: 1380px !important;
     }
+
+    .filtered-products{
+        grid-template-columns: repeat(5,1fr);
+    }
 }
 
 /* Min Width 1200px */
@@ -86,12 +90,26 @@
 /* Max Width 480px */
 @media only screen and (max-width:480px){
 
+    .woo-deals{
+        flex-direction: column;
+        align-items: flex-start;
+        gap:5px;
+    }
+
     .brands .card-content p{
         font-size: .75rem;
     }
 
     .sec-title span{
         display: none;
+    }
+
+    .product-content .price{
+        font-size: 1rem;
+    }
+
+    .product-content .product-details{
+        font-size: .9rem;
     }
 
     .footer-services{
@@ -102,4 +120,12 @@
         justify-content: flex-start;
     }
 
+}
+
+/* Max Width 380px */
+@media only screen and (max-width:380px){
+
+    .sec-heading h2{
+        font-size: 1.5rem;
+    }
 }

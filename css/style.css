@@ -679,12 +679,13 @@ span.product-quantity{
 
 .banner-wpr{
     display: grid;
-    grid-template-columns: 240px 1fr 240px;
-    grid-column-gap: 20px;
+    grid-template-columns: 1fr 240px;
 }
 
 .banner-content-wpr{
-    width: 835px;
+    width: 100%;
+    padding: 0 20px 0 260px;
+    overflow: hidden;
 }
 
 .banner-main-content img{
@@ -1211,7 +1212,9 @@ input[type="checkbox"]:checked::after{
 }
 
 .filtered-products{
-    column-count: 5;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 16px;
 }
 
 /* .single-widget ul  li,
