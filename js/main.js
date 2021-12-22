@@ -7,33 +7,38 @@
     $(".banner-main-content").owlCarousel({
         items:1,
         dots:false,
-        nav:false
+        nav:true,
+        navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
     })
 
     $(".banner-sub-content .sub-content-items").owlCarousel({
         items:4,
         dots:false,
-        nav:false,
+        nav:true,
+        navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
         margin:12
     })
 
     $(".one-column-slider").owlCarousel({
         items:1,
         dots:false,
-        nav:false,
+        nav:true,
+        navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
     })
 
     $(".six-column-slider").owlCarousel({
         items:6,
         dots:false,
-        nav:false,
+        nav:true,
+        navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
         margin:16
     })
 
     $(".five-column-slider").owlCarousel({
         items:5,
         dots:false,
-        nav:false,
+        nav:true,
+        navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
         margin:16
     })
 

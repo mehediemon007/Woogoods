@@ -4,3 +4,102 @@
         max-width: 1380px !important;
     }
 }
+
+/* Min Width 1200px */
+@media only screen and (min-width:1200px){
+
+    .single-ver-card .card-content{
+        padding: 18px;
+    }
+}
+
+/* Min Width 992px and Max Width 1199px */
+@media only screen and (min-width:992px) and (max-width:1199px){
+
+    .news-letter input{
+        width: 100%;
+    }
+
+    .news-sign-up{
+        right: 0;
+        width: 80px;
+    }
+}
+
+/* Min Width 992px */
+@media only screen and (min-width:992px){
+
+    .footer-services .single-service:not(:last-of-type){
+        border-right: 1px solid #808080;
+    }
+}
+
+/* Max Width 1199px */
+@media only screen and (max-width:1199px){
+
+    .trending-stores{
+        column-count: 2;
+    }
+}
+
+/* Max Width 991px */
+@media only screen and (max-width:991px){
+
+    .brands{
+        grid-template-columns: repeat(5,1fr);
+    }
+
+    .footer-services .single-service{
+        justify-content: center;
+        margin-bottom: 24px;
+    }
+
+    .footer-services{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .woo-product-nav{
+        display: none;
+    }
+}
+
+/* Max Width 767px */
+@media only screen and (max-width:767px){
+
+    .brands{
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .news-letter input{
+        max-width: 100%;
+    }
+
+    .news-sign-up{
+        width: 90px;
+    }
+
+    .trending-stores{
+        column-count: 1;
+    }
+}
+
+/* Max Width 480px */
+@media only screen and (max-width:480px){
+
+    .brands .card-content p{
+        font-size: .75rem;
+    }
+
+    .sec-title span{
+        display: none;
+    }
+
+    .footer-services{
+        grid-template-columns: 1fr;
+    }
+
+    .footer-services .single-service{
+        justify-content: flex-start;
+    }
+
+}
