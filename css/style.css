@@ -2400,6 +2400,7 @@ input[type="radio"]:checked::before{
     display: inline-block;
     color: var(--white-color);
     padding: 0 20px;
+    margin-bottom: 10px;
 }
 
 .footer-menu a:not(:last-of-type)::before{

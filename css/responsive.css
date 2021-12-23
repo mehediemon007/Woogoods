@@ -86,6 +86,19 @@
     }
 }
 
+/* Max Width 575px */
+@media only screen and (max-width:575px){
+    
+    .woo-footer-2 .footer-menu a{
+        display: block;
+        padding: 0;
+    }
+
+    .woo-footer-2 .footer-menu a::before{
+        content: none;
+    }
+}
+
 /* Max Width 480px */
 @media only screen and (max-width:480px){
 
