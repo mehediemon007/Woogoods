@@ -17,6 +17,18 @@
         nav:true,
         navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
         margin:12,
+        responsive:{
+            0:{
+                items:2
+            },
+            400:{
+                items:3
+            },
+            500:{
+                items:4
+            }
+
+        }
     })
 
     $(".one-column-slider").owlCarousel({
@@ -410,6 +422,14 @@
         
         $(".nav-toggle .fa-times").on("click",function(){
             $(".woo-product-nav").removeClass("show")
+        })
+    }
+
+    if($(".nav-search-btn").length){
+
+        $(".nav-search-btn").on("click",function(e){
+            e.preventDefault();
+            $(".nav-search-input").toggleClass("show")
         })
     }
     

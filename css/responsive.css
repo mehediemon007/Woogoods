@@ -20,6 +20,14 @@
 /* Min Width 992px and Max Width 1199px */
 @media only screen and (min-width:992px) and (max-width:1199px){
 
+    .banner-main-content .owl-stage-outer{
+        min-height: 250px;
+    }
+
+    .banner-main-content img{
+        min-height: 250px;
+    }
+
     .news-letter input{
         width: 100%;
     }
@@ -32,6 +40,29 @@
 
 /* Min Width 992px */
 @media only screen and (min-width:992px){
+
+    /* Main Nav */
+
+    .nav-search{
+        position: relative;
+        margin: 0 16px;
+    }
+
+    .nav-search-btn{
+        position: absolute;
+        width: 45px;
+        height: 100%;
+        top: 0;
+        right: -20px;
+        font-size: 18px;
+        color: var(--white-color);
+        background-color: var(--primary-color);
+        border-radius: 0 5px 5px 0;
+    }
+
+    .nav-toggle{
+        display: none;
+    }
 
     /* Category Nav */
 
@@ -143,7 +174,20 @@
 }
 
 /* Max Width 991px */
+
 @media only screen and (max-width:991px){
+
+    .banner-wpr{
+        grid-template-columns: 1fr;
+    }
+
+    .banner-content-wpr{
+        padding-left: 20px;
+    }
+
+    .banner-widget{
+        display: none;
+    }
 
     .brands{
         grid-template-columns: repeat(5,1fr);
@@ -157,9 +201,31 @@
         grid-template-columns: repeat(2,1fr);
     }
 
-    /* .woo-product-nav{
-        display: none;
-    } */
+    .nav-search-input{
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        z-index: 10;
+        background-color: var(--white-color);
+        padding: 10px 40px;
+        visibility: hidden;
+        opacity: 0;
+        transition: var(--transition);
+    }
+
+    .nav-search-input.show{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .nav-search-btn{
+        font-size: 1.75rem;
+        color: var(--text-color);
+        background-color: transparent;
+        border-radius: 50%;
+        line-height: 100%;
+    }
 
     .woo-product-nav{
         position: fixed;
@@ -257,6 +323,10 @@
     .trending-stores{
         column-count: 1;
     }
+
+    .user-details{
+        display: none;
+    }
 }
 
 /* Max Width 575px */
@@ -312,5 +382,21 @@
 
     .sec-heading h2{
         font-size: 1.5rem;
+    }
+
+    .lang-switcher{
+        display: none;
+    }
+
+    .nav-search{
+        margin-left: 90px;
+    }
+}
+
+/* Max Width 320px */
+@media only screen and (max-width:320px){
+
+    .nav-search{
+        margin-left: 70px;
     }
 }
