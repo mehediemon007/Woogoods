@@ -315,6 +315,14 @@ input::placeholder{
   left: -18px;
 }
 
+.product-slider .owl-nav .owl-next{
+    right: 0;
+}
+
+.product-slider .owl-nav .owl-prev{
+    left: 0;
+}
+
 /* Order Sidebar Widget */
 
 .order-summary{
@@ -470,7 +478,7 @@ span.product-quantity{
 }
 
 .nav-toggle{
-    display: inline-block;
+    display: block;
     font-size: 1.5rem;
     margin-right: 16px;
     cursor: pointer;
@@ -1108,18 +1116,16 @@ input[type="checkbox"]:checked::after{
     grid-column-gap: 24px;
 }
 
-.filtered-products{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-column-gap: 16px;
+.categori-details .price-tools{
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-/* .single-widget ul  li,
-.brand-list a{
-    display: none;
-    transition: .2s;
-} */
-
+.filtered-products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(210px, 1fr));
+    grid-column-gap: 16px;
+}
 
 /* Paginatuon */
 
@@ -1127,6 +1133,8 @@ input[type="checkbox"]:checked::after{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
     background-color: var(--white-color);
     padding: 22px 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);

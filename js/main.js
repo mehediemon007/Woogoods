@@ -1,6 +1,6 @@
 ;(function($){
 
-    $(".woo-categories-nav").click(function(){
+    $(".woo-categories-nav").click(function(e){
         $(this).toggleClass("active");
     })
 
@@ -32,10 +32,17 @@
     })
 
     $(".one-column-slider").owlCarousel({
+        loop:true,
         items:1,
         dots:false,
-        nav:true,
+        nav:false,
         navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+        autoplay:true,
+        responsive:{
+            576:{
+                nav:true
+            }
+        }
     })
 
     $(".six-column-slider").owlCarousel({
@@ -406,9 +413,11 @@
 
     if($(".has-children").length){
 
-        $(".has-children").on("click",function(){
-            $(this).next(".sub-menu").slideToggle();
-        })
+        if($(window).winth () <= 991){
+            $(".has-children").on("click",function(){
+                $(this).next(".sub-menu").slideToggle();
+            })
+        }
     }
 
     if($(".nav-toggle .fa-bars").length){
@@ -430,6 +439,22 @@
         $(".nav-search-btn").on("click",function(e){
             e.preventDefault();
             $(".nav-search-input").toggleClass("show")
+        })
+    }
+
+    if($(".category-toggle").length){
+
+        $(".category-toggle").on("click",function(){
+
+            $(this).parent().removeClass("show")
+        })
+    }
+
+    if($(".product-filter").length){
+
+        $(".product-filter").on("click",function(){
+
+            $(".woo-sidebar-widget").addClass("show")
         })
     }
     
