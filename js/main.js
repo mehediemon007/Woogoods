@@ -413,7 +413,7 @@
 
     if($(".has-children").length){
 
-        if($(window).winth () <= 991){
+        if($(window).width () <= 991){
             $(".has-children").on("click",function(){
                 $(this).next(".sub-menu").slideToggle();
             })
