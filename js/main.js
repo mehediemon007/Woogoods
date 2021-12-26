@@ -151,52 +151,59 @@
     // })
 
 
-    $('.print-widget  .infinite-container').simpleLoadMore({
-        item: '.load-more',
-        count: 4,
-        itemsToLoad: 3,
-        easing:"slide"
-    });
+    var path = window.location.pathname;
+    var page = path.split("/").pop();
+    if(page=="categori-details.html"){
+       
+        $('.print-widget  .infinite-container').simpleLoadMore({
+            item: '.load-more',
+            count: 4,
+            itemsToLoad: 3,
+            easing:"slide"
+        });
+    
+        $('.brand-widget  .infinite-container').simpleLoadMore({
+            item: '.load-more',
+            count: 4,
+            itemsToLoad: 2,
+            easing:"fade"
+        });
+    
+        $('.material-widget  .infinite-container').simpleLoadMore({
+            item: '.load-more',
+            count: 5,
+            itemsToLoad: 2,
+            easing:"slide"
+        });
+    
+        $('.color-widget  .infinite-container').simpleLoadMore({
+            item: '.load-more',
+            count: 13,
+            itemsToLoad: 4,
+            easing:"slide"
+        });
+    
+        $('.size-widget  .infinite-container').simpleLoadMore({
+            item: '.load-more',
+            count: 5,
+            itemsToLoad: 2,
+            easing:"slide"
+        });
+    }else if(page=="product-details.html"){
 
-    $('.brand-widget  .infinite-container').simpleLoadMore({
-        item: '.load-more',
-        count: 4,
-        itemsToLoad: 2,
-        easing:"fade"
-    });
-
-    $('.material-widget  .infinite-container').simpleLoadMore({
-        item: '.load-more',
-        count: 5,
-        itemsToLoad: 2,
-        easing:"slide"
-    });
-
-    $('.color-widget  .infinite-container').simpleLoadMore({
-        item: '.load-more',
-        count: 13,
-        itemsToLoad: 4,
-        easing:"slide"
-    });
-
-    $('.size-widget  .infinite-container').simpleLoadMore({
-        item: '.load-more',
-        count: 5,
-        itemsToLoad: 2,
-        easing:"slide"
-    });
-
-    $('#cm-review').simpleLoadMore({
-        item: '.load-more',
-        count: 1,
-        itemsToLoad: 1,
-    });
-
-    $(".product-filter-label").click(function(){
-        $(this).toggleClass("active")
-    })
-
-    $('#cm-review .load-more__btn').text("See more comment");
+        $('#cm-review').simpleLoadMore({
+            item: '.load-more',
+            count: 1,
+            itemsToLoad: 1,
+        });
+    
+        $(".product-filter-label").click(function(){
+            $(this).toggleClass("active")
+        })
+    
+        $('#cm-review .load-more__btn').text("See more comment");
+    
+    }
 
     // Close Category Tabs
 
@@ -335,6 +342,20 @@
         $(".sign-with-mail").addClass("show")
     })
 
+    $(".main-menu").click(function(){
+        $(".categories").removeClass("active");
+        $(this).addClass("active");
+        $(".woo-categories-nav").removeClass("show")
+        $(".woo-product-menu").addClass("show")
+    })
+
+    $(".categories").click(function(){
+        $(".main-menu").removeClass("active");
+        $(this).addClass("active");
+        $(".woo-product-menu").removeClass("show")
+        $(".woo-categories-nav").addClass("show")
+    })
+
     // Password Type Toggle
 
     $(".pass-input > i").click(function(){
@@ -366,6 +387,29 @@
     if($(".modal-heading .fa-times").length){
         $(".modal-heading .fa-times").click(function(){
             $(".woo-ticket-modal").removeClass("show")
+        })
+    }
+
+    // Mobile Sidebar
+
+    if($(".has-children").length){
+
+        $(".has-children").on("click",function(){
+            $(this).next(".sub-menu").slideToggle();
+        })
+    }
+
+    if($(".nav-toggle .fa-bars").length){
+
+        $(".nav-toggle .fa-bars").on("click",function(){
+            $(".woo-product-nav").addClass("show")
+        })
+    }
+
+    if($(".nav-toggle .fa-times").length){
+        
+        $(".nav-toggle .fa-times").on("click",function(){
+            $(".woo-product-nav").removeClass("show")
         })
     }
     
