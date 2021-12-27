@@ -7,6 +7,7 @@
     .filtered-products{
         grid-template-columns: repeat(5,1f);
     }
+
 }
 
 /* Min Width 1200px */
@@ -40,6 +41,10 @@
     .news-sign-up{
         right: 0;
         width: 80px;
+    }
+
+    .ordered-product .order-quantity{
+        top: 50%;
     }
 }
 
@@ -340,6 +345,11 @@
     .category-items{
         grid-template-columns: repeat(4,1fr);
     }
+
+    .woo-divider{
+        grid-template-columns: 1fr;
+        grid-row-gap: 24px;
+    }
 }
 
 /* Max Width 767px */
@@ -377,6 +387,22 @@
 
     .category-items{
         grid-template-columns: repeat(3,1fr);
+    }
+
+    .ordered-product{
+        flex-wrap: wrap;
+    }
+
+    .ordered-product-details{
+        gap: 24px;
+    }
+
+    .shipment-form .woo-btn{
+        min-width: 80px;
+    }
+
+    .ordered-product-details{
+        min-height: auto;
     }
 }
 

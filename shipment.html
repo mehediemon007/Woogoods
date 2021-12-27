@@ -48,28 +48,31 @@
         <div class="woo-main-nav">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-2">
-                        <div class="woo-logo">
-                            <a href="#"><img src="images/logo/logo.png" alt="logo"></a>
+                    <div class="col-lg-2 col-4">
+                        <div class="woo-logo d-flex">
+                            <!-- <a href="#" class="nav-toggle"><i class="fas fa-bars"></i></a> -->
+                            <a href="index.html"><img src="images/logo/logo.png" alt="logo"></a>
                         </div>
                     </div>
-                    <div class="col-8">
+                    <div class="col-lg-8 col-4">
                         <div class="nav-middle">
                             <div class="row align-items-center">
-                                <div class="col-1">
+                                <div class="col-lg-1 d-none d-lg-block">
                                     <div>
                                         <p class="light-text">Language</p>
                                         <p class="bold-font">English</p>
                                     </div>
                                 </div>
-                                <div class="col-10">
+                                <div class="col-lg-10 col-7 text-end text-lg-start">
                                     <form class="nav-search">
-                                        <label for="nav-search" class="visually-hidden">Search Product</label>
-                                        <input type="text" id="nav-search" placeholder="Search for anything">
+                                        <fieldset class="nav-search-input">
+                                            <label for="nav-search" class="visually-hidden">Search Product</label>
+                                            <input type="text" id="nav-search" placeholder="Search for anything">
+                                        </fieldset>
                                         <button type="submit" class="nav-search-btn"><i class="fas fa-search"></i></button>
                                     </form>
                                 </div>
-                                <div class="col-1">
+                                <div class="col-5 col-lg-1">
                                     <div class="lang-switcher">
                                         <span class="flag"><img src="images/flags/bd-flag.png" alt="bangladesh"/></span>
                                         <a href="#" class="lang"><i class="fas fa-caret-down"></i></a>
@@ -83,7 +86,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-lg-2 col-4">
                         <div class="nav-right d-flex justify-content-between align-items-center">
                             <div class="nav-user">
                                 <i class="far fa-user"></i>
@@ -109,11 +112,11 @@
                 <div class="woo-divider py-4">
                     <div>
                         <div class="woo-sec-wpr-2 mb-20">
-                            <div class="woo-stepbar d-flex align-items-center justify-content-between">
+                            <div class="woo-stepbar d-flex flex-wrap align-items-center justify-content-between">
                                 <div class="step-heading">
                                     <p><i class="fas fa-shield-alt"></i> Secure Payment</p>
                                 </div>
-                                <div class="progress-steps d-flex">
+                                <div class="progress-steps d-flex mt-3 mt-md-0">
                                     <div class="single-progress-step checked"></div>
                                     <div class="single-progress-step checked"></div>
                                     <div class="single-progress-step checked"></div>
@@ -128,77 +131,77 @@
                                 <h4>Shipping Address</h4>
                                 <form class="shipment-form">
                                     <div class="row align-items-center">
-                                        <div class="col-6">
+                                        <div class="col-md-6">
                                             <fieldset class="woo-input woo-verticle-input">
                                                 <label for="payment-date">Name:</label>
                                                 <div class="row">
-                                                    <div class="col-6">
+                                                    <div class="col-sm-6">
                                                         <input type="text" id="payment-date" placeholder="First Name">
                                                     </div>
-                                                    <div class="col-6">
+                                                    <div class="col-sm-6 mt-3 mt-sm-0">
                                                         <input type="text" id="payment-date" placeholder="Last Name">
                                                     </div>
                                                 </div>
                                             </fieldset>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-md-6">
                                             <fieldset class="woo-input woo-verticle-input">
                                                 <label for="payment-date">Telephone:</label>
                                                 <input type="text" id="payment-date" placeholder="Your telephone:">
                                             </fieldset>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-md-6">
                                             <fieldset class="woo-input woo-verticle-input">
                                                 <label for="payment-date">Address Line 1:</label>
                                                 <input type="text" id="payment-date" placeholder="Street and number, company name, C/O">
                                             </fieldset>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-md-6">
                                             <fieldset class="woo-input woo-verticle-input">
                                                 <label for="payment-date">Address Line 2:</label>
                                                 <input type="text" id="payment-date" placeholder="Apartment, suite, unit, building, floor, etc (Optional)">
                                             </fieldset>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-md-6">
                                             <fieldset class="woo-input woo-verticle-input">
                                                 <label for="payment-date">Country / Region:</label>
                                                 <input type="text" id="payment-date" placeholder="Bangladesh">
                                             </fieldset>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-md-6">
                                             <fieldset class="woo-input woo-verticle-input">
                                                 <label for="payment-date">State / Province / Region:</label>
                                                 <input type="text" id="payment-date" placeholder="Please select a state/province/region">
                                             </fieldset>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-md-6">
                                             <fieldset class="woo-input woo-verticle-input">
                                                 <label for="payment-date">City</label>
                                                 <input type="text" id="payment-date" placeholder="Your City">
                                             </fieldset>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-md-6">
                                             <fieldset class="woo-input woo-verticle-input">
                                                 <label for="payment-date">ZIP / Post Code:</label>
                                                 <input type="text" id="payment-date" placeholder="Your Post Code">
                                             </fieldset>
                                         </div>
-                                        <div class="col-5">
+                                        <div class="col-xl-4 col-xxl-5">
                                             <div class="address-type">
                                                 <p class="primary-color"><i class="fas fa-home"></i> Home</p>
                                                 <p><i class="far fa-building"></i> Office</p>
                                             </div>
                                         </div>
-                                        <div class="col-7">
+                                        <div class="col-xl-8 col-xxl-7 mt-2 mt-xl-0">
                                             <div class="row align-items-center">
-                                                <div class="col-6">
-                                                    <fieldset class="woo-input ms-5 mb-0">
+                                                <div class="col-xl-6 col-sm-7">
+                                                    <fieldset class="woo-input ms-xl-5 mb-0">
                                                         <input type="checkbox" id="save-card">
                                                         <label for="save-card" class="ms-2">Set as default shipping address</label>
                                                     </fieldset>
                                                 </div>
-                                                <div class="col-6">
-                                                    <div class="text-end">
+                                                <div class="col-xl-6 col-sm-5">
+                                                    <div class="text-sm-end mt-2 mt-sm-0">
                                                         <a href="#" class="woo-btn">Cancle</a>
                                                         <a href="#" class="woo-btn woo-primary-btn">Save</a>
                                                     </div>

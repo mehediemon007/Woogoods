@@ -1703,6 +1703,11 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
     margin-top: 20px;
 }
 
+.ordered-product .order-quantity{
+    position: absolute;
+    right: -10px;
+}
+
 .ordered-product img{
     border-radius: 10px;
 }
