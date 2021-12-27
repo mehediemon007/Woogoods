@@ -7,6 +7,14 @@
     .filtered-products{
         grid-template-columns: repeat(5,1f);
     }
+    
+    .single-order-status{
+        flex-direction: row;
+    }
+
+    .voucher-code input{
+        width: 68%;
+    }
 
 }
 
@@ -50,6 +58,12 @@
 
 /* Min Width 992px */
 @media only screen and (min-width:992px){
+
+    .woo-divider-rev{
+        display: grid;
+        grid-template-columns: 240px 1fr;
+        grid-column-gap: 20px;
+    }
 
     /* Main Nav */
 
@@ -350,6 +364,26 @@
         grid-template-columns: 1fr;
         grid-row-gap: 24px;
     }
+
+    .account-widget{
+        position: absolute;
+        height: 100%;
+        left: -1%;
+        visibility: hidden;
+        opacity: 0;
+        transition: var(--transition);
+        z-index: 10;
+    }
+
+    .account-widget.show{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .acc-expand,
+    .acc-close{
+        cursor: pointer;
+    }
 }
 
 /* Max Width 767px */
@@ -404,6 +438,14 @@
     .ordered-product-details{
         min-height: auto;
     }
+
+    .ticket-modal{
+        width: 90%;
+    }
+
+    .order-status-tab-links{
+        justify-content: flex-start;
+    }
 }
 
 /* Max Width 575px */
@@ -416,6 +458,10 @@
 
     .woo-footer-2 .footer-menu a::before{
         content: none;
+    }
+
+    .ticket-modal{
+        top: 5%;
     }
 }
 
@@ -461,6 +507,10 @@
 
     .category-items{
         grid-template-columns: repeat(2,1fr);
+    }
+
+    .upload-path{
+        width: 80%;
     }
 
     .footer-services{
@@ -522,5 +572,23 @@
 
     .category-list-2 .nav-link{
         width: 100%;
+    }
+
+    .ticket-btn{
+        width: 100%;
+    }
+
+    .ticket-status,
+    .process-status{
+        text-align: left !important;
+    }
+
+    .single-order-status{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .order-status-tab-links .nav-link{
+        padding: .5rem;
     }
 }

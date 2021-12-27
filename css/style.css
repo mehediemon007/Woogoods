@@ -260,12 +260,6 @@ input::placeholder{
     grid-column-gap: 20px;
 }
 
-.woo-divider-rev{
-    display: grid;
-    grid-template-columns: 240px 1fr;
-    grid-column-gap: 20px;
-}
-
 .woo-btn{
     display: inline-block;
     min-width: 95px;
@@ -1713,7 +1707,7 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
 }
 
 .voucher-code input{
-    width: 68%;
+    width: 100%;
     box-shadow: inset -4px 4px 4px rgba(0, 0, 0, 0.1), inset 4px -4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     padding: 8px 16px;
@@ -1898,7 +1892,8 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
 .single-ticket{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
     background-color: #F3F3F3;
     margin-bottom: 20px;
     padding: 16px;

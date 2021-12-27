@@ -93,7 +93,21 @@
 
     $(".viewd-products").owlCarousel({
         loop:true,
-        margin:10
+        margin:10,
+        responsive:{
+            0:{
+                items:2
+            },
+            380:{
+                items:3
+            },
+            768:{
+                items:2
+            },
+            1400:{
+                items:3
+            }
+        }
     })
 
     // Language Switcher  active
@@ -468,6 +482,24 @@
         categoryBox[i].addEventListener("click",function(){
             this.classList.toggle("active")
         })
+    }
+
+    const accExpand = document.querySelector(".acc-expand");
+
+    if(accExpand !== null){
+        
+        accExpand.addEventListener("click", function(){
+            document.querySelector(".account-widget").classList.add("show")
+        })
+    }
+
+    const accClose = document.querySelector(".acc-close");
+
+    if(accClose != null){
+
+        accClose.onclick = function(){
+            document.querySelector(".account-widget").classList.remove("show")
+        }
     }
     
 })()
