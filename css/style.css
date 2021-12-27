@@ -782,6 +782,7 @@ span.product-quantity{
 
 .sec-heading .fa-bolt{
     background-image: linear-gradient(0deg, #FF6D27 0%, #FF3A27 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
