@@ -54,6 +54,11 @@
     .ordered-product .order-quantity{
         top: 50%;
     }
+
+    .product-filter-label{
+        height: max-content;
+        margin-bottom: 10px;
+    }
 }
 
 /* Min Width 992px */
@@ -516,6 +521,15 @@
     .single-notification{
         grid-template-columns: 1fr;
         padding: 20px;
+    }
+
+    .single-order{
+        flex-direction: column;
+    }
+
+    .order-meta-data{
+        position: absolute;
+        right: 0;
     }
 
     .footer-services{

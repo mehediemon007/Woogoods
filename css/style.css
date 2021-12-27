@@ -404,7 +404,7 @@ input::placeholder{
 .order-meta-data{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 20px;
 }
 
 .order-meta-data .order-quantity span{
@@ -1676,6 +1676,7 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
 .sec-toolbar{
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .woo-payment img{

@@ -229,13 +229,18 @@
             count: 1,
             itemsToLoad: 1,
         });
+
+        $('#cm-review .load-more__btn').text("See more comment");
     
+    }
+
+    // Product Filtering
+
+    if($(".product-filter-label").length){
+       
         $(".product-filter-label").click(function(){
             $(this).toggleClass("active")
         })
-    
-        $('#cm-review .load-more__btn').text("See more comment");
-    
     }
 
     // Close Category Tabs
