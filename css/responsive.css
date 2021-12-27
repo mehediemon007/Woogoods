@@ -412,6 +412,10 @@
 /* Max Width 767px */
 @media only screen and (max-width:767px){
 
+    .main-logo{
+        max-width: 160px
+    }
+
     .brands{
         grid-template-columns: repeat(4,1fr);
     }
