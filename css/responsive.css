@@ -54,11 +54,6 @@
     .ordered-product .order-quantity{
         top: 50%;
     }
-
-    .product-filter-label{
-        height: max-content;
-        margin-bottom: 10px;
-    }
 }
 
 /* Min Width 992px */
@@ -627,5 +622,18 @@
     .otp-number input{
         width: 33px;
         height: 40px;
+    }
+
+    .single-progress-step{
+        margin-right: 24px;
+    }
+
+    .single-progress-step:not(:last-of-type):after{
+        width: 24px;
+        left: 32px;
+    }
+
+    .ordered-product{
+        gap: 10px;
     }
 }

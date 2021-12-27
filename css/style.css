@@ -369,7 +369,7 @@ input::placeholder{
 .product-filter-label{
     display: inline-block;
     max-width: 310px;
-    height: 30px;
+    min-height: 30px;
     color: var(--text-color-light);
     padding: 0 10px;
     border-radius: 5px;

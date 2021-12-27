@@ -239,7 +239,13 @@
     if($(".product-filter-label").length){
        
         $(".product-filter-label").click(function(){
-            $(this).toggleClass("active")
+            $(this).addClass("active");
+
+            $(".filter-close").on("click",function(e){
+
+                e.preventDefault();
+                $(".product-filter-label").removeClass("active");
+            })
         })
     }
 
