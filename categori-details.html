@@ -49,28 +49,31 @@
         <div class="woo-main-nav">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-2">
-                        <div class="woo-logo">
-                            <a href="#"><img src="images/logo/logo.png" alt="logo"></a>
+                    <div class="col-lg-2 col-4">
+                        <div class="woo-logo d-flex">
+                            <!-- <a href="#" class="nav-toggle"><i class="fas fa-bars"></i></a> -->
+                            <a href="index.html"><img src="images/logo/logo.png" alt="logo"></a>
                         </div>
                     </div>
-                    <div class="col-8">
+                    <div class="col-lg-8 col-4">
                         <div class="nav-middle">
                             <div class="row align-items-center">
-                                <div class="col-1">
+                                <div class="col-lg-1 d-none d-lg-block">
                                     <div>
                                         <p class="light-text">Language</p>
                                         <p class="bold-font">English</p>
                                     </div>
                                 </div>
-                                <div class="col-10">
+                                <div class="col-lg-10 col-7 text-end text-lg-start">
                                     <form class="nav-search">
-                                        <label for="nav-search" class="visually-hidden">Search Product</label>
-                                        <input type="text" id="nav-search" placeholder="Search for anything">
+                                        <fieldset class="nav-search-input">
+                                            <label for="nav-search" class="visually-hidden">Search Product</label>
+                                            <input type="text" id="nav-search" placeholder="Search for anything">
+                                        </fieldset>
                                         <button type="submit" class="nav-search-btn"><i class="fas fa-search"></i></button>
                                     </form>
                                 </div>
-                                <div class="col-1">
+                                <div class="col-5 col-lg-1">
                                     <div class="lang-switcher">
                                         <span class="flag"><img src="images/flags/bd-flag.png" alt="bangladesh"/></span>
                                         <a href="#" class="lang"><i class="fas fa-caret-down"></i></a>
@@ -84,7 +87,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-lg-2 col-4">
                         <div class="nav-right d-flex justify-content-between align-items-center">
                             <div class="nav-user">
                                 <i class="far fa-user"></i>
@@ -108,6 +111,7 @@
         <div class="container">
             <div class="categori-details">
                 <div class="woo-sidebar-widget">
+                    <a href="#" class="nav-toggle category-toggle"><i class="fas fa-times"></i></a>
                     <div class="categori-widget single-widget">
                         <h6>Categories</h6>
                         <ul class="categori-menu">
@@ -227,14 +231,17 @@
                         <a href="#" class="breadcrumb-link active">“Bodysuits”</a>
                     </div>
                     <div class="product-toolbar">
-                        <div class="d-flex align-items-center">
+                        <div class="woo-sec-wpr p-3 mb-3 d-lg-none">
+                            <span class="product-filter" role="button"><i class="fas fa-filter"></i> Filter</span>
+                        </div>
+                        <div class="d-flex align-items-center price-tools">
                             <div class="price-filter-widget">
                                 <span>Price:</span>
                                 <input type="text" placeholder="min" class="mx-3">
                                 <span>&#8213;</span>
                                 <input type="text" placeholder="max" class="ms-3">
                             </div>
-                            <div class="checkbox-widget ms-5">
+                            <div class="checkbox-widget ms-xl-5">
                                 <fieldset>
                                     <input type="checkbox" id="sale">
                                     <label for="sale">SALE</label>

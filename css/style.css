@@ -1116,7 +1116,7 @@ input[type="checkbox"]:checked::after{
     grid-column-gap: 24px;
 }
 
-.categori-details .price-tools{
+.price-tools{
     flex-wrap: wrap;
     gap: 10px;
 }
