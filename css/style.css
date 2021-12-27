@@ -1726,7 +1726,7 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
 /* Payment Crad Details */
 
 .card-form{
-    width: max-content;
+    max-width: max-content;
 }
 
 .woo-input{
