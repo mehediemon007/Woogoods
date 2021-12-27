@@ -580,6 +580,10 @@
     .category-list-2 .nav-link i{
         margin-right: 10px;
     }
+
+    .otp-number input{
+        margin-right: 5px;
+    }
 }
 
 /* Max Width 320px */
@@ -618,5 +622,10 @@
 
     .order-status-tab-links .nav-link{
         padding: .5rem;
+    }
+
+    .otp-number input{
+        width: 33px;
+        height: 40px;
     }
 }
