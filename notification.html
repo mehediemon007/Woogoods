@@ -48,28 +48,31 @@
         <div class="woo-main-nav">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-2">
-                        <div class="woo-logo">
-                            <a href="#"><img src="images/logo/logo.png" alt="logo"></a>
+                    <div class="col-lg-2 col-4">
+                        <div class="woo-logo d-flex">
+                            <!-- <a href="#" class="nav-toggle"><i class="fas fa-bars"></i></a> -->
+                            <a href="index.html"><img src="images/logo/logo.png" alt="logo"></a>
                         </div>
                     </div>
-                    <div class="col-8">
+                    <div class="col-lg-8 col-4">
                         <div class="nav-middle">
                             <div class="row align-items-center">
-                                <div class="col-1">
+                                <div class="col-lg-1 d-none d-lg-block">
                                     <div>
                                         <p class="light-text">Language</p>
                                         <p class="bold-font">English</p>
                                     </div>
                                 </div>
-                                <div class="col-10">
+                                <div class="col-lg-10 col-7 text-end text-lg-start">
                                     <form class="nav-search">
-                                        <label for="nav-search" class="visually-hidden">Search Product</label>
-                                        <input type="text" id="nav-search" placeholder="Search for anything">
+                                        <fieldset class="nav-search-input">
+                                            <label for="nav-search" class="visually-hidden">Search Product</label>
+                                            <input type="text" id="nav-search" placeholder="Search for anything">
+                                        </fieldset>
                                         <button type="submit" class="nav-search-btn"><i class="fas fa-search"></i></button>
                                     </form>
                                 </div>
-                                <div class="col-1">
+                                <div class="col-5 col-lg-1">
                                     <div class="lang-switcher">
                                         <span class="flag"><img src="images/flags/bd-flag.png" alt="bangladesh"/></span>
                                         <a href="#" class="lang"><i class="fas fa-caret-down"></i></a>
@@ -83,7 +86,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-lg-2 col-4">
                         <div class="nav-right d-flex justify-content-between align-items-center">
                             <div class="nav-user">
                                 <i class="far fa-user"></i>
@@ -101,7 +104,7 @@
         </div>
     </header>
 
-    <!-- Mian Nav -->
+    <!-- Mian Content -->
 
     <main class="woo-main-content">
         <div class="woo-notifications">
@@ -111,9 +114,9 @@
                     <a href="#" class="breadcrumb-link">My Account</a>
                     <a href="#" class="breadcrumb-link active">My Account</a>
                 </div>
-                <div class="woo-divider-rev">
-                    <div class="account-widget">
-                        <h6>My Account</h6>
+                <div class="woo-divider-rev position-relative">
+                    <div class="account-widget mb-4 mb-xl-0"> 
+                        <h6 class="d-flex justify-content-between aligh-items-center">My Account <span class="d-lg-none"><i class="fas fa-times acc-close"></i></span></h6>
                         <ul class="account-menu">
                             <li><a href="#">My Order</a></li>
                             <li><a href="#">Tracking Order</a></li>
@@ -128,6 +131,9 @@
                         <a href="#" class="logout-btn">Logout</a>
                    </div>
                    <div class="woo-main-sec">
+                    <div class="woo-sec-wpr p-2 px-3 mb-20 d-lg-none">
+                        <span class="acc-expand"><i class="fas fa-user-alt ms-2"></i> My Account</span>
+                    </div>
                     <div class="woo-sec-wpr-2 mb-20 rounded-0 d-flex justify-content-between align-items-center">
                         <h6 class="mb-0">Notification</h6>
                         <a href="#">Clear</a>

@@ -513,6 +513,11 @@
         width: 80%;
     }
 
+    .single-notification{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
     .footer-services{
         grid-template-columns: 1fr;
     }
@@ -525,6 +530,15 @@
 
 /* Max Width 380px */
 @media only screen and (max-width:380px){
+
+    .woo-sec-wpr-2{
+        padding: 16px;
+    }
+
+    .woo-sec-wpr{
+        padding: 16px;
+        padding-bottom: 0;
+    }
 
     .sec-heading h2{
         font-size: 1.5rem;
