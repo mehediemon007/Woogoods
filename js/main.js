@@ -11,7 +11,7 @@
         dots:false,
         navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
         responsive:{
-             576:{
+             992:{
                  nav:true
              }
         }
