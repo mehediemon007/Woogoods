@@ -1103,6 +1103,11 @@ input[type="checkbox"]:checked::after{
 
 .view-widget .layout-icon{
     font-size: 28px;
+    cursor: pointer;
+}
+
+.view-widget .layout-icon.active{
+    color: var(--primary-color);
 }
 
 .categori-details{
@@ -1120,6 +1125,17 @@ input[type="checkbox"]:checked::after{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(210px, 1fr));
     grid-column-gap: 16px;
+    transition: grid-template-column var(--transition);
+}
+
+.filtered-products.list{
+    grid-template-columns: 1fr;
+}
+
+
+.filtered-products.list .single-product{
+    display: flex;
+    align-items: center;
 }
 
 /* Paginatuon */

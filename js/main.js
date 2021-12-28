@@ -6,9 +6,15 @@
 
     $(".banner-main-content").owlCarousel({
         items:1,
+        loop:true,
+        autoplay:true,
         dots:false,
-        nav:true,
         navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+        responsive:{
+             576:{
+                 nav:true
+             }
+        }
     })
 
     $(".banner-sub-content .sub-content-items").owlCarousel({
@@ -17,6 +23,7 @@
         nav:true,
         navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
         margin:12,
+        autoplay:true,
         responsive:{
             0:{
                 items:2
@@ -51,10 +58,14 @@
         nav:true,
         navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
         margin:16,
+        autoplay:true,
         responsive:{
             0:{
                 items:1,
                 nav:false
+            },
+            360:{
+                items:2
             },
             768:{
                 items:3
@@ -74,15 +85,19 @@
         nav:true,
         navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
         margin:16,
+        autoplay:true,
         responsive:{
             0:{
                 items:1,
                 nav:false
             },
+            360:{
+                items:2
+            },
             768:{
                 items:3
             },
-            992:{
+            1200:{
                 items:4
             },
             1400:{
@@ -133,56 +148,6 @@
             $(".show-more-btn").fadeOut('slow')
         }
     })
-
-    // Categori sidebar load-more
-
-    // $(".color-list > li").slice(0, 13).show();
-    // $(".color-widget .view-more").on("click", function(e){
-    //     e.preventDefault()
-    //     $(".color-list > li:hidden").slice(0, 4).slideDown()
-    //     if ($(".color-list > li:hidden").length == 0) {
-    //         $(".color-widget .view-more").hide()
-    //     }
-    // })
-
-    
-
-    // $(".size-list > li").slice(0, 4).show();
-    // $(".size-widget .view-more").on("click", function(e){
-    //     e.preventDefault()
-    //     $(".size-list > li:hidden").slice(0, 2).slideDown()
-    //     if ($(".size-list > li:hidden").length == 0) {
-    //         $(".size-widget .view-more").hide()
-    //     }
-    // })
-
-    // $(".material-list > li").slice(0, 5).show();
-    // $(".material-widget .view-more").on("click", function(e){
-    //     e.preventDefault()
-    //     $(".material-list > li:hidden").slice(0, 2).slideDown()
-    //     if ($(".material-list > li:hidden").length == 0) {
-    //         $(".material-widget .view-more").hide()
-    //     }
-    // })
-
-    // $(".print-list > li").slice(0, 5).show();
-    // $(".print-widget .view-more").on("click", function(e){
-    //     e.preventDefault()
-    //     $(".print-list > li:hidden").slice(0, 2).slideDown()
-    //     if ($(".print-list > li:hidden").length == 0) {
-    //         $(".print-widget .view-more").hide()
-    //     }
-    // })
-
-    // $(".brand-list > a").slice(0, 4).show();
-    // $(".brand-widget .view-more").on("click", function(e){
-    //     e.preventDefault()
-    //     $(".brand-list > a:hidden").slice(0, 4).slideDown()
-    //     if ($(".brand-list > a:hidden").length == 0) {
-    //         $(".brand-widget .view-more").hide()
-    //     }
-    // })
-
 
     var path = window.location.pathname;
     var page = path.split("/").pop();
@@ -463,6 +428,28 @@
         $(".product-filter").on("click",function(){
 
             $(".woo-sidebar-widget").addClass("show")
+        })
+    }
+
+    // Layout Change
+
+    if($(".grid-icon").length){
+
+        $(".grid-icon").on("click",function(){
+            
+            $(".list-icon").removeClass("active");
+            $(this).addClass("active");
+            $(".filtered-products").removeClass("list");
+        })
+    }
+    
+    if($(".list-icon").length){
+
+        $(".list-icon").on("click",function(){
+
+            $(".grid-icon").removeClass("active");
+            $(this).addClass("active");
+            $(".filtered-products").addClass("list");
         })
     }
     
