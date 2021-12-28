@@ -16,6 +16,25 @@
         width: 68%;
     }
 
+    .detailed-single-product{
+        display: grid;
+        grid-template-columns: 1fr 300px;
+    }
+
+    .products-grid-five{
+        grid-template-columns: repeat(5,1fr);
+    }
+
+    .shop-meta-data{
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(128,128,128,.5);
+    }
+
+    .product-shop-details{
+        display: block;
+        gap: 0;
+    }
+
 }
 
 /* Min Width 1200px */
@@ -28,7 +47,6 @@
     .filtered-products{
         grid-template-columns: repeat(4,1fr);
     }
-    
 }
 
 /* Min Width 992px and Max Width 1199px */
@@ -53,6 +71,10 @@
 
     .ordered-product .order-quantity{
         top: 50%;
+    }
+
+    .cart-btns a{
+        width: 150px;
     }
 }
 
@@ -407,6 +429,19 @@
     .acc-close{
         cursor: pointer;
     }
+
+    .woo-product-reviews-wpr{
+        grid-template-columns: 1fr;
+    }
+
+    .product-shop-details,
+    .review-side-widget{
+        display: none;
+    }
+
+    .products-grid-five{
+        grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
+    }
 }
 
 /* Max Width 767px */
@@ -472,6 +507,10 @@
 
     .order-status-tab-links{
         justify-content: flex-start;
+    }
+
+    .reviews-tab-links .nav-link{
+        margin-right: 0;
     }
 }
 
@@ -554,6 +593,31 @@
         right: 0;
     }
 
+    .single-rating-stat{
+        grid-template-columns: 50px 160px 90px;
+        grid-column-gap: 16px;
+        align-items: center;
+    }
+
+    .progress{
+        height: .5rem;
+    }
+
+    .cart-btns a{
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .product-image-slider{
+        flex-wrap: wrap-reverse;
+        gap: 24px;
+    }
+
+    .slider-thumb .slick-slide{
+        margin: 0 8px 18px;
+    }
+
     .footer-services{
         grid-template-columns: 1fr;
     }
@@ -605,6 +669,14 @@
 
     .otp-number input{
         margin-right: 5px;
+    }
+
+    .reviews-tab-links .nav-item{
+        padding: 0 10px;
+    }
+
+    .product-slider-preview .slick-slide img{
+        height: 450px;
     }
 }
 
@@ -662,5 +734,15 @@
 
     .ordered-product{
         gap: 10px;
+    }
+
+    .single-rating-stat{
+        grid-template-columns: 1fr;
+        grid-row-gap: 5px;
+        margin-bottom: 8px;
+    }
+
+    .product-slider-preview .slick-slide img{
+        height: 350px;
     }
 }

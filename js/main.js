@@ -291,17 +291,11 @@
             arrows: false,
             responsive: [
                 {
-                    breakpoint: 1200,
+                    breakpoint: 481,
                     settings: {
                         vertical: false,
-                    }
-                },
-                {
-                    breakpoint: 479,
-                    settings: {
-                        vertical: false,
-                        slidesPerRow: 3,
-                        slidesToShow: 3,
+                        // slidesPerRow:3,
+                        // slidesToShow:3,
                     }
                 },
             ]
@@ -318,7 +312,7 @@
             draggable: false,
             responsive: [
                 {
-                    breakpoint: 1200,
+                    breakpoint: 481,
                     settings: {
                         vertical: false,
                         fade: true,
