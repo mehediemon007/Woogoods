@@ -1468,12 +1468,12 @@ input[type="checkbox"]:checked::after{
 
 .product-shop-details{
     display: flex;
-    gap: 16px;
     max-height: 550px;
     background-color: var(--white-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding:20px;
+    margin-top: 24px;
 }
 
 .shop-meta-data .meta-title{
@@ -1599,7 +1599,7 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
 }
 
 .slider-thumb .slick-slide{
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 }
 
 .product-slider-preview .slick-slide img{

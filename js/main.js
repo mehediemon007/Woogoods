@@ -294,8 +294,6 @@
                     breakpoint: 481,
                     settings: {
                         vertical: false,
-                        // slidesPerRow:3,
-                        // slidesToShow:3,
                     }
                 },
             ]
@@ -310,15 +308,6 @@
             asNavFor: '.slider-thumb',
             arrows: false,
             draggable: false,
-            responsive: [
-                {
-                    breakpoint: 481,
-                    settings: {
-                        vertical: false,
-                        fade: true,
-                    }
-                },
-            ]
         });
     }
 
