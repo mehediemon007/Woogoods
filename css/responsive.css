@@ -351,7 +351,6 @@
         display: block;
         color: var(--text-color);
         padding: 8px 0;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
 
     .product-navigation a i{
@@ -443,8 +442,12 @@
 /* Max Width 767px */
 @media only screen and (max-width:767px){
 
-    .woo-toolbar{
-        display: none;
+    .woo-toolbar span, .woo-toolbar a{
+        font-size: .8rem;
+    }
+
+    .toolbar-social-links a{
+        margin-left: 8px;
     }
 
     .woo-main-nav{
@@ -537,6 +540,10 @@
 
 /* Max Width 480px */
 @media only screen and (max-width:480px){
+
+    .woo-toolbar{
+        display: none;
+    }
 
     .products-grid-five{
         grid-template-columns: repeat(2,2fr);
