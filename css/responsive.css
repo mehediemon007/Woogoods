@@ -443,6 +443,14 @@
 /* Max Width 767px */
 @media only screen and (max-width:767px){
 
+    .woo-toolbar{
+        display: none;
+    }
+
+    .woo-main-nav{
+        padding: 10px 0;
+    }
+
     .main-logo{
         max-width: 160px
     }
