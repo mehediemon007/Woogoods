@@ -234,7 +234,7 @@
     }
 
     .banner-content-wpr{
-        padding-left: 20px;
+        padding: 0;
     }
 
     .banner-widget{
@@ -545,8 +545,10 @@
         display: none;
     }
 
-    .products-grid-five{
-        grid-template-columns: repeat(2,2fr);
+    .products-grid-five,
+    .filtered-products,
+    .products-grid-four{
+        grid-template-columns: repeat(2,1fr);
     }
 
     .sub-banner-content-wpr{
@@ -635,6 +637,10 @@
 
     .product-slider-preview .slick-slide img{
         height: 500px;
+    }
+
+    .shops{
+        column-count: 3;
     }
 
     .footer-services{
@@ -766,7 +772,9 @@
         height: 350px;
     }
 
-    .products-grid-five{
+    .products-grid-five,
+    .filtered-products,
+    .products-grid-four{
         grid-template-columns: 1fr;
     }
 }

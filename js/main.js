@@ -258,7 +258,6 @@
                     breakpoint: 481,
                     settings: {
                         vertical: false,
-                        slidesToShow: 2,
                     }
                 },
             ]

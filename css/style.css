@@ -579,7 +579,6 @@ span.product-quantity{
 .shopping-cart {
     position: relative;
     cursor: pointer;
-    margin-left: 20px;
 }
   
 .shopping-cart-popup {
