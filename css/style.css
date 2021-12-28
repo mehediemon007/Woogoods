@@ -442,6 +442,11 @@ span.product-quantity{
     color: var(--white-color);
 }
 
+.toolbar-social-links a{
+    display: inline-block;
+    margin-left: 14px;
+}
+
 .woo-main-nav{
     position: relative;
     padding: 28px 0 16px;
@@ -551,7 +556,7 @@ span.product-quantity{
   .lang-switcher .lang-list::before {
     content: '';
     display: block;
-    clear: both;
+    /* clear: both; */
     position: absolute;
     top: 0;
     left: 0;
@@ -564,7 +569,6 @@ span.product-quantity{
     opacity: 1;
     top: 52px;
     visibility: visible;
-    z-index: 20;
   }
   
 
@@ -753,6 +757,17 @@ span.product-quantity{
     justify-content: space-between;
     align-items: center;
     position: relative;
+}
+
+.color-heading{
+    display: inline-block;
+    width: max-content;
+    height: max-content;
+    font-size: 30px;
+    color: var(--white-color);
+    background-image: linear-gradient(0deg, #FF6D27 0%, #FF3A27 100%);
+    padding: 0 8px;
+    border-radius: 2px;
 }
 
 .sec-title span{
@@ -950,7 +965,7 @@ span.product-quantity{
 /* Trending Store */
 
 .trending-stores{
-    column-count: 4;
+    column-count: 2;
 }
 
 /* Shop Name */
@@ -962,7 +977,7 @@ span.product-quantity{
 /* Ads Banner */
 
 .ads-wpr img{
-    height: 300px;
+    height: 150px;
 }
 
 /* Liked Products */
@@ -972,15 +987,15 @@ span.product-quantity{
     background-color: transparent;
 }
 
-.products-grid-six{
+.products-grid-five{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
     grid-column-gap: 16px;
 }
 
-.products-grid-five{
+.products-grid-four{
     display: grid;
-    grid-template-columns: repeat(auto-fit,198px);
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
     grid-column-gap: 16px;
 }
 
@@ -1123,13 +1138,13 @@ input[type="checkbox"]:checked::after{
 
 .filtered-products{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(210px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(220px, 1fr));
     grid-column-gap: 16px;
     transition: grid-template-column var(--transition);
 }
 
 .filtered-products.list{
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
 }
 
 
@@ -1646,7 +1661,7 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
     content: "";
     font-family: "Font Awesome 5 Free";
     font-weight: 600;
-    font-size: .6rem;
+    font-size: .625rem;
     color: var(--white-color);
     top: 0;
     left: 0;

@@ -1,7 +1,7 @@
 ;(function($){
 
-    $(".woo-categories-nav").click(function(e){
-        $(this).toggleClass("active");
+    $(".category-span").click(function(e){
+        $(this).parent().toggleClass("active")
     })
 
     $(".banner-main-content").owlCarousel({
@@ -74,7 +74,7 @@
                 items:4
             },
             1200:{
-                items:6
+                items:5
             }
         }
     })
@@ -249,7 +249,6 @@
             vertical: true,
             infinite: true,
             verticalSwiping: true,
-            slidesPerRow: 5,
             slidesToShow: 5,
             asNavFor: '.product-slider-preview',
             focusOnSelect: true,
@@ -259,6 +258,7 @@
                     breakpoint: 481,
                     settings: {
                         vertical: false,
+                        slidesToShow: 2,
                     }
                 },
             ]
