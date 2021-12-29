@@ -124,6 +124,10 @@ input::placeholder{
 
 /* General Css */
 
+.scroll-margin{
+    scroll-margin-top: 20px;
+}
+
 .mt-30{
     margin-top: 30px;
 }
