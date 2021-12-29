@@ -125,7 +125,7 @@ input::placeholder{
 /* General Css */
 
 .scroll-margin{
-    scroll-margin-top: 20px;
+    scroll-margin-top: 155px;
 }
 
 .mt-30{
@@ -454,8 +454,17 @@ span.product-quantity{
 
 .woo-main-nav{
     position: relative;
-    padding: 28px 0 16px;
+    width: 100%;
+    padding: 20px 0 16px;
+    background-color: var(--white-color);
     transition: var(--transition);
+    z-index: 20;
+}
+
+.woo-main-nav.sticky{
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 10%);
 }
 
 .nav-search input{
@@ -575,7 +584,6 @@ span.product-quantity{
     opacity: 1;
     top: 52px;
     visibility: visible;
-    z-index: 20;
   }
 
 /* Shopping cart */

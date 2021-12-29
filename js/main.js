@@ -456,6 +456,13 @@
 
 (function(){
 
+    // Sticky Nav
+
+    const headerContainer = document.querySelector(".woo-main-nav");
+    window.onscroll = ()=>{
+            this.scrollY > 80 ? headerContainer.classList.add("sticky") : headerContainer.classList.remove("sticky");
+    }
+
     const categoryBox = document.getElementsByClassName("single-sub-category");
 
     for ( i = 0; i < categoryBox.length ; i++){
