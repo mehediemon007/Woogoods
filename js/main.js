@@ -140,10 +140,10 @@
 
     //   Show More Content
 
-    $(".liked-products > .single-product").slice(0, 12).show();
+    $(".liked-products > .single-product").slice(0, 10).show();
     $(".show-more-btn").on("click", function(e){
         e.preventDefault()
-        $(".liked-products > .single-product:hidden").slice(0, 6).slideDown()
+        $(".liked-products > .single-product:hidden").slice(0, 5).slideDown()
         if ($(".liked-products > .single-product:hidden").length == 0) {
             $(".show-more-btn").fadeOut('slow')
         }

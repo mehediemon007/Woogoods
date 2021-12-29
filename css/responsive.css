@@ -245,6 +245,10 @@
         grid-template-columns: repeat(5,1fr);
     }
 
+    .ads-wpr img{
+        height: 150px;
+    }
+
     .wow-all-categoris-wpr{
         grid-template-columns: 1fr;
         grid-row-gap: 24px;
