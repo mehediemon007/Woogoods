@@ -760,6 +760,10 @@ span.product-quantity{
     padding:  0 20px;
 }
 
+.sub-banner-text *{
+    color: var(--white-color) !important;
+}
+
 .woo-user{
     display: flex;
     flex-direction: column;
@@ -821,8 +825,21 @@ span.product-quantity{
 /* Sub Banner */
 
 .woo-sub-banner{
-    background-color: #9BBCFF;
+    position: relative;
+    background-image: url("../images/banner/seller-store-bg.jpg");
     padding: 90px 0 100px;
+    z-index: 1;
+}
+
+.woo-sub-banner::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
 }
 
 .sub-banner-content-wpr{
@@ -850,6 +867,7 @@ span.product-quantity{
 /* CallToAction Nav */
 
 .callToAction-nav-menu{
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -857,6 +875,7 @@ span.product-quantity{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     padding: 12px 0;
     margin-top: -25px;
+    z-index: 1;
 }
 
 .callToAction-nav-menu a:hover,
