@@ -777,4 +777,8 @@
     .products-grid-four{
         grid-template-columns: 1fr;
     }
+
+    .sorting-menu a{
+        margin-bottom: 5px;
+    }
 }
