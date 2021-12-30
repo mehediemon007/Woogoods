@@ -1126,6 +1126,46 @@ span.product-quantity{
     border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+.all-sellers{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+
+.single-seller{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background-color: var(--white-color);
+    padding: 20px 10px;
+    border-radius: 3px;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.single-seller:hover{
+    box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.07);
+}
+
+.seller-stars span{
+    font-size: 1rem;
+    color: goldenrod;
+}
+
+.view-seller{
+    display: inline-block;
+    color: var(--primary-color);
+    padding: 5px 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    transition: var(--transition);
+}
+
+.view-seller:hover{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
 /* Trending Store */
 
 .trending-stores{
