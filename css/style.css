@@ -1779,6 +1779,10 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
     margin-bottom: 16px;
 }
 
+.slider-thumb .slick-slide img{
+    cursor: pointer;
+}
+
 .product-slider-preview .slick-slide img{
     height: 550px;
 }
