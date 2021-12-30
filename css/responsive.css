@@ -248,12 +248,7 @@
     .all-sellers{
         grid-template-columns: repeat(2,1fr);
     }
-
-    .ads-wpr img{
-        width: 100%;
-        height: 150px;
-    }
-
+    
     .wow-all-categoris-wpr{
         grid-template-columns: 1fr;
         grid-row-gap: 24px;
