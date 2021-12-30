@@ -255,7 +255,7 @@
             arrows: false,
             responsive: [
                 {
-                    breakpoint: 481,
+                    breakpoint: 768,
                     settings: {
                         vertical: false,
                     }
