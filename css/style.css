@@ -1108,6 +1108,24 @@ span.product-quantity{
     font-weight: var(--font-weight-medium);
 }
 
+.all-brands{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 20px;
+    gap: 16px;
+    padding: 16px;
+    background-color: var(--white-color);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.all-brands .single-brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
 /* Trending Store */
 
 .trending-stores{
