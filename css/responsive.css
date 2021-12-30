@@ -245,6 +245,10 @@
         grid-template-columns: repeat(4,1fr);
     }
 
+    .all-sellers{
+        grid-template-columns: repeat(2,1fr);
+    }
+
     .ads-wpr img{
         width: 100%;
         height: 150px;
@@ -470,6 +474,13 @@
     .brands{
         grid-template-columns: repeat(3,1fr);
     }
+    
+    .single-seller{
+        flex-direction: column;
+        gap: 0;
+        align-items: flex-start;
+        padding: 20px 30px;
+    }
 
     .news-letter input{
         max-width: 100%;
@@ -659,6 +670,15 @@
 
     .shops{
         column-count: 3;
+    }
+
+    .all-sellers{
+        grid-template-columns: 1fr;
+    }
+
+    .single-seller{
+        flex-direction: row;
+        gap: 20px;
     }
 
     .footer-services{
