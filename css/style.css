@@ -1133,9 +1133,6 @@ span.product-quantity{
 }
 
 .single-seller{
-    display: flex;
-    align-items: center;
-    gap: 24px;
     background-color: var(--white-color);
     padding: 20px 10px;
     border-radius: 3px;
@@ -1154,10 +1151,11 @@ span.product-quantity{
 
 .view-seller{
     display: inline-block;
+    font-size: .9rem;
     color: var(--primary-color);
-    padding: 5px 10px;
+    padding: 4px 8px;
     border: 1px solid var(--primary-color);
-    border-radius: 5px;
+    border-radius: 3px;
     transition: var(--transition);
 }
 
