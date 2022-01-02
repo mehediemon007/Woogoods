@@ -312,7 +312,7 @@
 
     .woo-product-nav{
         position: fixed;
-        top: 50px;
+        top: 90px;
         left: -285px;
         width: 280px;
         height: 100vh;
@@ -576,6 +576,10 @@
 
     .woo-toolbar{
         display: none;
+    }
+
+    .woo-product-nav{
+        top: 50px;
     }
 
     .products-grid-five,

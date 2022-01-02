@@ -386,7 +386,8 @@
     if($(".has-children").length){
 
         if($(window).width () <= 991){
-            $(".has-children").on("click",function(){
+            $(".has-children").on("click",function(e){
+                e.preventDefault();
                 $(this).next(".sub-menu").slideToggle();
             })
         }
