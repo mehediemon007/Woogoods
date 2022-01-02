@@ -386,7 +386,7 @@
 
     .categori-details .woo-sidebar-widget{
         position: fixed;
-        top: 0;
+        top: 30px;
         right: -250px;
         width: 250px;
         height: 100vh;
