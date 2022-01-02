@@ -979,7 +979,8 @@ span.product-quantity{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-.single-product:hover .product-icons a{
+.single-product:hover .product-icons a,
+.filtered-products.list .single-product:hover .product-icons a{
     opacity: 1;
     transform: translateX(0);
 }
@@ -1038,6 +1039,11 @@ span.product-quantity{
     padding: 10px 16px;
 }
 
+.filtered-products.list .single-product .product-icons{
+    right: auto;
+    left: 0;
+}
+
 .product-icons a{
     display: block;
     width: 36px;
@@ -1053,6 +1059,10 @@ span.product-quantity{
     opacity: 0;
     transform: translateX(18px);
     transition: .3s;
+}
+
+.filtered-products.list .product-icons a{
+    transform: translateX(-60px);
 }
 
 .product-icons a:hover{

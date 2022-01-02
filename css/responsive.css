@@ -729,6 +729,10 @@
         grid-template-columns: repeat(3,1fr);
     }
 
+    .ordered-product .order-quantity{
+        right: 0;
+    }
+
 }
 
 /* Max Width 320px */
