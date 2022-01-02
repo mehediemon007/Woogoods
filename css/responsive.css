@@ -31,6 +31,10 @@
         margin-top: 0;
     }
 
+    .category-list{
+        height: max-content !important;
+    }
+
 }
 
 /* Min Width 1200px */
@@ -42,6 +46,10 @@
 
     .filtered-products{
         grid-template-columns: repeat(4,1fr);
+    }
+
+    .category-list{
+        height: 620px !important;
     }
 }
 
