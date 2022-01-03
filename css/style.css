@@ -746,9 +746,14 @@ span.product-quantity{
 
 .banner-sub-content .single-item h6{
     position: absolute;
-    width: 100%;
+    left: 50%;
     bottom: 5px;
+    color: var(--white-color);
+    background-color: var(--primary-color);
     text-align: center;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transform: translateX(-50%);
 }
 
 .banner-widget{
@@ -818,7 +823,7 @@ span.product-quantity{
 
 .woo-policy ul li{
     font-size: .9rem;
-    padding-left: 24px;
+    padding-left: 16px;
     line-height: 30px;
 }
 
@@ -1925,11 +1930,14 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
     gap: 10px;
 }
 
+.payment-gateways{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,80px);
+    grid-gap: 16px;
+}
+
 .woo-payment img{
-    padding: 12px;
-    border-radius: 5px;
-    border:1px solid var(--primary-color);
-    margin-top: 10px;
+    padding: 0 5px;
 }
 
 .single-order{
