@@ -1931,9 +1931,9 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
 }
 
 .payment-gateways{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,70px);
+    grid-gap: 8px;
 }
 
 .woo-payment img{
