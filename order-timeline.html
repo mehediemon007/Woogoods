@@ -9,7 +9,7 @@
     
     <!-- Fav Icon -->
     <link rel="icon" type="image/png" href="images/logo/image-logo.png">
-    <title>Customer Account</title>
+    <title>Tracking Order</title>
 
     <!-- Inject:css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -24,10 +24,10 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body class="position-relative">
     
-     <!-- Header -->
-     <header class="woo-header">
+    <!-- Header -->
+    <header class="woo-header">
         <!-- Tootbar -->
         <div class="woo-toolbar">
             <div class="container">
@@ -175,211 +175,98 @@
     </header>
 
     <!-- Main Content -->
-
     <main class="woo-main-content">
-        <div class="woo-customer-acc">
+         <div class="woo-tickets">
             <div class="container py-2">
                 <div class="woo-breadcrumb my-3">
                     <a href="index.html" class="breadcrumb-link ps-0">Home</a>
-                    <a href="#" class="breadcrumb-link active">My Account</a>
+                    <a href="order-track.html" class="breadcrumb-link">order-track</a>
+                    <a href="#" class="breadcrumb-link active">Track Details</a>
                 </div>
                 <div class="woo-divider-rev position-relative">
                     <div class="account-widget mb-4 mb-xl-0"> 
-                         <h6 class="d-flex justify-content-between aligh-items-center">My Account <span class="d-lg-none"><i class="fas fa-times acc-close"></i></span></h6>
-                         <ul class="account-menu">
-                             <li><a href="order-status.html">My Order</a></li>
-                             <li><a href="order-track.html">Tracking Order</a></li>
-                             <li><a href="notification.html"><i class="far fa-bell"></i>Notification</a></li>
-                             <li><a href="messages.html"><i class="far fa-envelope"></i>Messages</a></li>
-                             <li><a href="ticket.html"><i class="fas fa-ticket-alt"></i>Ticket</a></li>
-                             <li><a href="address-book.html"><i class="far fa-address-book"></i>Address Book</a></li>
-                             <li><a href="recent-view.html"><i class="far fa-newspaper"></i>Recent Views</a></li>
-                             <li><a href="hlep-center.html"><i class="fas fa-headset"></i>Customer Service</a></li>
-                             <li><a href="account-info.html"><i class="fas fa-cog"></i>Settings</a></li>
-                         </ul>
-                         <a href="#" class="logout-btn">Logout</a>
-                    </div>
-                    <div class="woo-main-sec">
+                        <h6 class="d-flex justify-content-between align-items-center">My Account <span class="d-lg-none"><i class="fas fa-times acc-close"></i></span></h6>
+                        <ul class="account-menu">
+                            <li><a href="order-status.html">My Order</a></li>
+                            <li><a href="order-track.html">Tracking Order</a></li>
+                            <li><a href="notification.html"><i class="far fa-bell"></i>Notification</a></li>
+                            <li><a href="messages.html"><i class="far fa-envelope"></i>Messages</a></li>
+                            <li><a href="ticket.html"><i class="fas fa-ticket-alt"></i>Ticket</a></li>
+                            <li><a href="address-book.html"><i class="far fa-address-book"></i>Address Book</a></li>
+                            <li><a href="recent-view.html"><i class="far fa-newspaper"></i>Recent Views</a></li>
+                            <li><a href="hlep-center.html"><i class="fas fa-headset"></i>Customer Service</a></li>
+                            <li><a href="account-info.html"><i class="fas fa-cog"></i>Settings</a></li>
+                        </ul>
+                        <a href="#" class="logout-btn">Logout</a>
+                   </div>
+                   <div class="woo-main-sec">
                         <div class="woo-sec-wpr p-2 px-3 mb-20 d-lg-none">
                             <span class="acc-expand"><i class="fas fa-user-alt ms-2"></i> My Account</span>
                         </div>
-                        <div class="woo-sec-wpr-2 rounded-0 mb-20 p-0">
-                            <div class="customer-dashboard">
-                                <div class="row">
-                                    <div class="col-lg-3 col-sm-4">
-                                        <div class="customer-profile">
-                                            <div class="customer-info">
-                                                <div class="profile-image">
-                                                    <img src="images/customer-pp.jpg" alt="Hasan">
-                                                </div>
-                                                <p class="text-white">Mehedi Hasan Emon</p>
-                                            </div>
-                                            <p class="customer-phone">+880123465789</p>
+                        <div class="woo-sec-wpr-2 mb-20 rounded-0">
+                            <h6 class="mb-0">Order #123</h6>
+                            <div class="progress-steps d-flex mt-3 mt-md-0">
+                                <div class="single-progress-step checked"></div>
+                                <div class="single-progress-step checked"></div>
+                                <div class="single-progress-step checked"></div>
+                                <div class="single-progress-step checked"></div>
+                                <div class="single-progress-step current"></div>
+                                <div class="single-progress-step"></div>
+                            </div>
+                        </div>
+                        <div class="woo-sec-wpr-2 mb-100">
+                            <div class="woo-order-track position-relative">
+                                <h6 class="mb-4">Order Timeline</h6>
+                                <div class="track-body position-relative">
+                                    <div class="single-track-item">
+                                        <p class="timing">4 Jan 12:00 AM</p>
+                                        <div class="content">
+                                            <h6>Pending</h6>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam saepe sunt molestias.</p>
                                         </div>
                                     </div>
-                                    <div class="col-lg-9 col-sm-8">
-                                        <div class="account-dashboard p-4">
-                                            <h6 class="d-flex justify-content-between">My Assets</h6>
-                                            <div class="row">
-                                                <div class="col-4">
-                                                    <div class="single-acc-status text-center">
-                                                        <h3>0</h3>
-                                                        <p>Wish List</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-4">
-                                                    <div class="single-acc-status text-center">
-                                                        <h3>0</h3>
-                                                        <p>Followed Stores</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-4">
-                                                    <div class="single-acc-status text-center">
-                                                        <h3>0</h3>
-                                                        <p>Coupon</p>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <div class="single-track-item">
+                                        <p class="timing">4 Jan 12:00 AM</p>
+                                        <div class="content">
+                                            <h6>Confirmed</h6>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam saepe sunt molestias.</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-track-item">
+                                        <p class="timing">4 Jan 12:00 AM</p>
+                                        <div class="content">
+                                            <h6>Processing</h6>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam saepe sunt molestias.</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-track-item">
+                                        <p class="timing">4 Jan 12:00 AM</p>
+                                        <div class="content">
+                                            <h6>Picket</h6>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam saepe sunt molestias.</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-track-item">
+                                        <p class="timing">4 Jan 12:00 AM</p>
+                                        <div class="content border-0">
+                                            <h6>Shipped</h6>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam saepe sunt molestias.</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-track-item">
+                                        <p class="timing">4 Jan 12:00 AM</p>
+                                        <div class="content border-0">
+                                            <h6>Delivered</h6>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam saepe sunt molestias.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="woo-sec-wpr-2 py-2 px-4 mb-20 rounded-0">
-                            <p><i class="far fa-envelope primary-color me-3"></i>Verify your email to make your account safer </p>
-                        </div>
-                        <div class="row pb-100">
-                            <div class="col-md-8">
-                                <div class="woo-sec-wpr-2 mb-20 rounded-0">
-                                    <div class="order-status">
-                                        <h6>My Orders</h6>
-                                        <div class="row">
-                                            <div class="col-sm-4 col-xl-3 col-6">
-                                                <div class="single-order-status flex-column text-center mt-4">
-                                                    <img src="images/logo/all-order.svg" alt="all-order">
-                                                    <a href="order-status.html"><p class="mt-1">All Order</p></a>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4 col-xl-3 col-6">
-                                                <div class="single-order-status flex-column text-center mt-4">
-                                                    <img src="images/logo/pending.svg" alt="pending">
-                                                    <a href="order-status"><p class="mt-1">Pending</p></a>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4 col-xl-3 col-6">
-                                                <div class="single-order-status flex-column text-center mt-4">
-                                                    <img src="images/logo/system.svg" alt="processing">
-                                                    <a href="order-status.html"><p class="mt-1">Processing</p></a>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4 col-xl-3 col-6">
-                                                <div class="single-order-status flex-column text-center mt-4">
-                                                    <img src="images/logo/picked.svg" alt="picked">
-                                                    <a href="order-status.html"><p class="mt-1">Picked</p></a>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4 col-xl-3 col-6">
-                                                <div class="single-order-status flex-column text-center mt-4">
-                                                    <img src="images/logo/shipped.svg" alt="shipped">
-                                                    <a href="order-status.html"><p class="mt-1">Shipped</p></a>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4 col-xl-3 col-6">
-                                                <div class="single-order-status flex-column text-center mt-4">
-                                                    <img src="images/logo/delivery.svg" alt="delivery">
-                                                    <a href="order-status.html"><p class="mt-1">Delivered</p></a>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4 col-xl-3 col-6">
-                                                <div class="single-order-status flex-column text-center mt-4">
-                                                    <img src="images/logo/return.svg" alt="return">
-                                                    <a href="order-status.html"><p class="mt-1">Returned</p></a>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4 col-xl-3 col-6">
-                                                <div class="single-order-status flex-column text-center mt-4">
-                                                    <img src="images/logo/cancle.svg" alt="cancel">
-                                                    <a href="order-status.html"><p class="mt-1">Cancelled</p></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="woo-sec-wpr-2 rounded-0">
-                                    <div class="setting-menu">
-                                        <h6>Settings</h6>
-                                        <div class="row">
-                                            <div class="col-sm-6 col-xl-3 col-6">
-                                                <div class="single-setting-option text-center mt-4">
-                                                    <img src="images/logo/id-card.svg" alt="Id card">
-                                                    <a href="account-info.html"><p class="mt-1">Account Information</p></a>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-xl-3 col-6">
-                                                <div class="single-setting-option text-center mt-4">
-                                                    <img src="images/logo/address-book.svg" alt="address-book">
-                                                    <a href="account-info.html"><p class="mt-1">Address Book</p></a>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-xl-3 col-6">
-                                                <div class="single-setting-option text-center mt-4">
-                                                    <img src="images/logo/policies.svg" alt="policies">
-                                                    <a href="account-info.html"><p class="mt-1">Policies</p></a>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-xl-3 col-6">
-                                                <div class="single-setting-option text-center mt-4">
-                                                    <img src="images/logo/help.svg" alt="help">
-                                                    <a href="account-info.html"><p class="mt-1">Help</p></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="woo-sec-wpr-2 rounded-0 mb-20 p-3">
-                                    <h6 class="mb-4">Recent Views</h6>
-                                    <div class="viewd-products owl-carousel">
-                                        <div class="text-center item">
-                                            <a href="product-details.html">
-                                                <img src="images/products/cart-products/red-tshirt.jpg" alt="T-shirt">
-                                                <p>US$199.99</p>
-                                            </a>
-                                        </div>
-                                        <div class="text-center item">
-                                            <a href="product-details.html">
-                                                <img src="images/products/cart-products/spary-makeup.jpg" alt="Makeup">
-                                                <p>US$19.99</p>
-                                            </a>
-                                        </div>
-                                        <div class="text-center item">
-                                            <a href="product-details.html">
-                                                <img src="images/products/cart-products/phone-cover.jpg" alt="Phone Cover">
-                                                <p>US$49.99</p>
-                                            </a>
-                                        </div>
-                                        <div class="text-center item">
-                                            <a href="product-details.html">
-                                                <img src="images/products/cart-products/pouch-bag.jpg" alt="Ladies Pouch">
-                                                <p>US$49.99</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="woo-sec-wpr-2 rounded-0">
-                                    <h6 class="mb-4">Tracking Order</h6>
-                                    <form class="voucher-code mb-3">
-                                        <input type="text" placeholder="Order Id">
-                                        <button type="submit" class="voucher-btn mt-3 mt-xxl-0">TRACK</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                   </div>
                 </div>
             </div>
-        </div>
+         </div>
     </main>
 
     <!-- Footer -->

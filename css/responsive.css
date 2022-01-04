@@ -687,7 +687,19 @@
     .ordered-product .order-quantity{
         top: 0;
         transform: translateY(0);
-     }
+    }
+
+    .single-track-item{
+        grid-template-columns: 80px 1fr;
+    }
+
+    .track-body::after{
+        left: 75px;
+    }
+
+    .single-track-item .content::after{
+        left: -30px;
+    }
     
     .footer-services{
         grid-template-columns: 1fr;

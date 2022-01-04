@@ -1783,6 +1783,41 @@ input[type="checkbox"]:checked::after{
     border-bottom:  2px solid var(--primary-color);
 }
 
+.track-body::after{
+    position: absolute;
+    top: 0;
+    left: 130px;
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: #FF6D27;
+}
+
+.single-track-item .content{
+    position: relative;
+    padding-bottom: 24px;
+    border-bottom: 1px dashed rgb(0 0 0 / 10%);
+}
+
+.single-track-item .content::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -34px;
+    width: 18px;
+    height: 18px;
+    background-color: #FF6D27;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.single-track-item{
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    margin-bottom: 16px;
+    grid-column-gap: 16px;
+}
+
 .tab-pane{
     padding: 40px 20px;
 }
