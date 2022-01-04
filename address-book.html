@@ -9,14 +9,13 @@
     
     <!-- Fav Icon -->
     <link rel="icon" type="image/png" href="images/logo/image-logo.png">
-    <title>Shopping Cart</title>
+    <title>Address Book</title>
 
     <!-- Inject:css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="css/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" type="text/css" href="css/dateselector.css">
     <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Template Stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
@@ -25,7 +24,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body class="position-relative">
     
     <!-- Header -->
     <header class="woo-header">
@@ -176,17 +175,17 @@
     </header>
 
     <!-- Main Content -->
-
     <main class="woo-main-content">
-        <div class="woo-account-info">
+         <div class="woo-tickets">
             <div class="container py-2">
                 <div class="woo-breadcrumb my-3">
                     <a href="index.html" class="breadcrumb-link ps-0">Home</a>
-                    <a href="#" class="breadcrumb-link active">My Account</a>
+                    <a href="customer-account.html" class="breadcrumb-link">My Account</a>
+                    <a href="#" class="breadcrumb-link active">Ticket</a>
                 </div>
                 <div class="woo-divider-rev position-relative">
                     <div class="account-widget mb-4 mb-xl-0"> 
-                        <h6 class="d-flex justify-content-between aligh-items-center">My Account <span class="d-lg-none"><i class="fas fa-times acc-close"></i></span></h6>
+                        <h6 class="d-flex justify-content-between align-items-center">My Account <span class="d-lg-none"><i class="fas fa-times acc-close"></i></span></h6>
                         <ul class="account-menu">
                             <li><a href="order-status.html">My Order</a></li>
                             <li><a href="order-status.html">Tracking Order</a></li>
@@ -195,113 +194,89 @@
                             <li><a href="ticket.html"><i class="fas fa-ticket-alt"></i>Ticket</a></li>
                             <li><a href="address-book.html"><i class="far fa-address-book"></i>Address Book</a></li>
                             <li><a href="recent-view.html"><i class="far fa-newspaper"></i>Recent Views</a></li>
-                            <li><a href="#"><i class="fas fa-headset"></i>Customer Service</a></li>
-                            <li><a href="#"><i class="fas fa-cog"></i>Settings</a></li>
+                            <li><a href="https://www.akaarit.com/"><i class="fas fa-headset"></i>Customer Service</a></li>
+                            <li><a href="account-info.html"><i class="fas fa-cog"></i>Settings</a></li>
                         </ul>
                         <a href="#" class="logout-btn">Logout</a>
                    </div>
-                   <div class="woo-main-sec mb-100">
+                   <div class="woo-main-sec">
                         <div class="woo-sec-wpr p-2 px-3 mb-20 d-lg-none">
                             <span class="acc-expand"><i class="fas fa-user-alt ms-2"></i> My Account</span>
                         </div>
-                       <div class="woo-sec-wpr-2 mb-20 rounded-0 d-none d-lg-block">
-                           <h6 class="mb-0">Account Information</h6>
-                       </div>
-                       <div class="woo-sec-wpr-2 rounded-0">
-                           <div class="row">
-                               <div class="col-md-4">
-                                   <div class="customer-pic text-center mb-4 mb-md-0">
-                                        <div class="circle">
-                                            <img class="profile-pic" src="images/customer-pic.jpg" alt="John">
-                                    
-                                            <!-- Default Image -->
-                                            <!-- <i class="fa fa-user fa-5x"></i> -->
+                        <div class="woo-sec-wpr-2 mb-20 rounded-0">
+                            <h6 class="mb-0">Manage Address</h6>
+                        </div>
+                        <div class="woo-sec-wpr-2">
+                            <div class="address-list pb-50">
+                                <div class="single-address">
+                                    <i class="fas fa-map-marker-alt text-primary"></i>
+                                    <div class="address-details w-100">
+                                        <div class="d-flex justify-content-between">
+                                            <h6>Mehedi Hasan</h6>
+                                            <a href="shipment.html" class="text-primary">Edit</a>
                                         </div>
-                                        <div class="p-image">
-                                            <span class="upload-button">Upload Avatar</span>
-                                            <input class="file-upload d-none" type="file" accept="image/*"/>
+                                        <p>880-167980065</p>
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <span class="address-tag">Home</span>
+                                            <p class="full-adddress mt-1 mt-sm-0">House No:10/C, Lotifpur, Dhaka</p>
                                         </div>
+                                        <button class="address-select">Select Address</button>
                                     </div>
-                               </div>
-                               <div class="col-md-8">
-                                    <div class="customer-info-setting pe-5">
-                                        <div>
-                                            <h6 class="mb-4">Personal Information</h6>
-                                            <fieldset class="woo-info-input">
-                                                <p class="input-heading">Nickname</p>
-                                                <label for="user-name" class="visually-hidden">Nickname</label>
-                                                <input type="text" id="user-name" value="Jawadul Islam Suhad">
-                                            </fieldset>
-                                            <fieldset class="woo-info-input">
-                                                <p class="input-heading">Gender</p>
-                                                <div>
-                                                    <label for="male" class="me-3"><input type="radio" id="male">Male</label>
-                                                    <label for="female"><input type="radio" id="female">Female</label>
-                                                </div>
-                                            </fieldset>
-                                            <fieldset class="woo-info-input">
-                                                <p class="input-heading">Birthday</p>
-                                                <div>
-                                                    <label for="birth" class="visually-hidden">Birth Day</label>
-                                                    <input class="dateselector1" type="text" id="birth">
-                                                </div>
-                                            </fieldset>
+                                </div>
+                                <div class="single-address">
+                                    <i class="fas fa-map-marker-alt text-primary"></i>
+                                    <div class="address-details w-100">
+                                        <div class="d-flex justify-content-between">
+                                            <h6>Nabil Khursed</h6>
+                                            <a href="shipment.html" class="text-primary">Edit</a>
                                         </div>
-                                        <div class="mt-4">
-                                            <h6 class="mb-4">Security Information</h6>
-                                            <fieldset class="woo-info-input">
-                                                <p class="input-heading">E-mail</p>
-                                                <label for="user-email" class="visually-hidden">E-mail</label>
-                                                <input type="email" id="user-email" value="suhadoffice@gmail.com">
-                                                <div class="text-end mt-4">
-                                                    <a href="#" class="woo-btn">Cancel</a>
-                                                    <a href="#" class="woo-btn woo-primary-btn">Save</a>
-                                                </div>
-                                            </fieldset>
-                                            <fieldset class="woo-info-input">
-                                                <p class="input-heading">Mobile Number</p>
-                                                <label for="user-phone" class="visually-hidden">E-mail</label>
-                                                <input type="text" id="user-phone" placeholder="Please Set Now">
-                                                <label for="phone-verify" class="visually-hidden">E-mail</label>
-                                                <input type="text" id="phone-verify" class="mt-4" placeholder="Verification Code">
-                                                <div class="text-end mt-4">
-                                                    <a href="#" class="woo-btn">Cancel</a>
-                                                    <a href="#" class="woo-btn woo-primary-btn">Save</a>
-                                                </div>
-                                            </fieldset>
+                                        <p>880-178980065</p>
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <span class="address-tag">Home</span>
+                                            <p class="full-adddress mt-1 mt-sm-0">House No:10/C, Uttara 10, Dhaka</p>
                                         </div>
-                                        <div>
-                                            <h6 class="mb-4">Others</h6>
-                                            <fieldset class="woo-info-input">
-                                                <p class="input-heading">Education</p>
-                                                <label for="education" class="visually-hidden">Education</label>
-                                                <input type="text" id="education" value="" placeholder="Please Set Now">
-                                            </fieldset>
-                                            <fieldset class="woo-info-input">
-                                                <p class="input-heading">Industry</p>
-                                                <label for="industry" class="visually-hidden">Industry</label>
-                                                <input type="text" id="industry" value="" placeholder="Please Set Now">
-                                            </fieldset>
-
-                                            <fieldset class="woo-info-input privacy-check mt-4">
-                                                <input type="checkbox" id="privacy">
-                                                <label for="privacy" class="text-dark">Newsletter subscription includes store news,new products,special
-                                                    offers, and other promotional announcements.
-                                                    Please read our <a href="#" class="colored-text">Privacy Policy</a></label>
-                                            </fieldset>
-                                            <div class="text-end mb-2">
-                                                <a href="#" class="woo-btn">Cancel</a>
-                                                <a href="#" class="woo-btn woo-primary-btn">Save</a>
-                                            </div>
-                                        </div>
+                                        <button class="address-select">Select Address</button>
                                     </div>
-                               </div>
-                           </div>
-                       </div>
+                                </div>
+                                <div class="single-address">
+                                    <i class="fas fa-map-marker-alt text-primary"></i>
+                                    <div class="address-details w-100">
+                                        <div class="d-flex justify-content-between">
+                                            <h6>Mahrab Hossain</h6>
+                                            <a href="shipment.html" class="text-primary">Edit</a>
+                                        </div>
+                                        <p>880-127980065</p>
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <span class="address-tag">Home</span>
+                                            <p class="full-adddress mt-1 mt-sm-0">House No:10/C, Upa-shahar, Borguna</p>
+                                        </div>
+                                        <button class="address-select">Select Address</button>
+                                    </div>
+                                </div>
+                                <div class="single-address mb-0">
+                                    <i class="fas fa-map-marker-alt text-primary"></i>
+                                    <div class="address-details w-100">
+                                        <div class="d-flex justify-content-between">
+                                            <h6>Samina Akther</h6>
+                                            <a href="shipment.html" class="text-primary">Edit</a>
+                                        </div>
+                                        <p>880-168912345</p>
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <span class="address-tag">Home</span>
+                                            <p class="full-adddress mt-1 mt-sm-0">House No:10/C, Boro Bazar, Laxmipur</p>
+                                        </div>
+                                        <button class="address-select">Select Address</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-end">
+                                <a href="shipment.html" class="ticket-btn">+ Add New Address</a>
+                            </div>
+                        </div>
                    </div>
                 </div>
             </div>
-        </div>
+         </div>
     </main>
 
     <!-- Footer -->
@@ -447,6 +422,73 @@
             </div>
         </div>
     </footer>
+
+    <!-- Ticket Making Modal -->
+
+    <div class="woo-ticket-modal">
+        <div class="ticket-modal">
+            <div class="d-flex justify-content-between modal-heading mb-2">
+                <h6>New Ticket</h6>
+                <a href="#"><i class="fas fa-times"></i></a>
+            </div>
+            <form class="modal-form ps-2">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <fieldset class="woo-input woo-verticle-input mb-3">
+                            <label for="tic-sub">Ticket Subject</label>
+                            <input type="text" id="tic-sub" placeholder="Subject">
+                        </fieldset>
+                    </div>
+                    <div class="col-sm-6">
+                        <fieldset class="woo-input woo-verticle-input mb-3">
+                            <label for="tic-mail">Your E-mail Arrderss</label>
+                            <input type="text" id="tic-mail" placeholder="E-mail Address">
+                        </fieldset>
+                    </div>
+                    <div class="col-sm-6">
+                        <fieldset class="woo-input woo-verticle-input mb-3">
+                            <label for="tic-priority">Priority</label>
+                            <select  id="tic-priority">
+                                <option value="">Low</option>
+                                <option value="">Medium</option>
+                                <option value="">High</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                    <div class="col-sm-6">
+                        <fieldset class="woo-input woo-verticle-input mb-3">
+                            <label for="tic-dept">Departrment</label>
+                            <select  id="tic-dept">
+                                <option value="">Slaes</option>
+                                <option value="">Marketing</option>
+                                <option value="">Production</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                    <div class="col-12">
+                        <fieldset class="woo-input woo-verticle-input mb-3">
+                            <label for="tic-msg">Message</label>
+                            <textarea  id="tic-msg"  rows="5" placeholder="Type Message"></textarea>
+                        </fieldset>
+                    </div>
+                    <div class="col-12">
+                        <fieldset class="woo-verticle-input mb-4">
+                            <label for="tic-doc">Attachments</label>
+                            <input class="upload-path" placeholder="Add Document" disabled />
+                            <label class="upload">
+                                <input type="file" id="tic-doc"/>
+                                <span>+</span>
+                            </label>
+                        </fieldset>
+                    </div>
+                    <div class="col-12 text-end">
+                        <button type="submit" class="woo-btn woo-primary-btn">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <!-- Js files -->
     <script src="js/modernizr-3.5.0.min.js"></script>
 
@@ -454,8 +496,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/simple-load-more.min.js"></script>
-    <script src="js/moment-with-locales.min.js"></script>
-    <script src="js/jquery.dateselector.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
