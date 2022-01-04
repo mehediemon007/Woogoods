@@ -556,6 +556,10 @@
     .all-brands{
         grid-template-columns: repeat(4,1fr);
     }
+
+    #send-chat{
+        width: 80%;
+    }
 }
 
 /* Max Width 575px */
@@ -826,5 +830,9 @@
 
     .sorting-menu a{
         margin-bottom: 5px;
+    }
+
+    #send-chat{
+        width: 70%;
     }
 }
