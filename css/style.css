@@ -368,6 +368,7 @@ input::placeholder{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 16px;
 }
 
 .product-filter-label{
@@ -1954,7 +1955,9 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
 
 .ordered-product .order-quantity{
     position: absolute;
-    right: -10px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
 }
 
 .ordered-product img{

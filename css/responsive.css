@@ -73,10 +73,6 @@
         width: 80px;
     }
 
-    .ordered-product .order-quantity{
-        top: 50%;
-    }
-
     .cart-btns a{
         width: 150px;
     }
@@ -683,6 +679,11 @@
     .all-sellers{
         grid-template-columns: 1fr;
     }
+
+    .ordered-product .order-quantity{
+        top: 0;
+        transform: translateY(0);
+     }
     
     .footer-services{
         grid-template-columns: 1fr;
@@ -747,10 +748,6 @@
 
     .all-brands{
         grid-template-columns: repeat(3,1fr);
-    }
-
-    .ordered-product .order-quantity{
-        right: 0;
     }
 
 }

@@ -109,15 +109,8 @@
     $(".viewd-products").owlCarousel({
         loop:true,
         margin:10,
-        center:true,
-        responsive:{
-            0:{
-                items:2
-            },
-            1400:{
-                items:3,
-            }
-        }
+        nav:false,
+        dots:false,
     })
 
     // Language Switcher  active
