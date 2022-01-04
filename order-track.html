@@ -9,7 +9,7 @@
     
     <!-- Fav Icon -->
     <link rel="icon" type="image/png" href="images/logo/image-logo.png">
-    <title>Ticket Support</title>
+    <title>Seller Conversation</title>
 
     <!-- Inject:css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -180,15 +180,14 @@
             <div class="container py-2">
                 <div class="woo-breadcrumb my-3">
                     <a href="index.html" class="breadcrumb-link ps-0">Home</a>
-                    <a href="ticket.html" class="breadcrumb-link">Ticket</a>
-                    <a href="#" class="breadcrumb-link active">Ticket Support</a>
+                    <a href="order-track.html" class="breadcrumb-link active">Order Track</a>
                 </div>
                 <div class="woo-divider-rev position-relative">
                     <div class="account-widget mb-4 mb-xl-0"> 
                         <h6 class="d-flex justify-content-between align-items-center">My Account <span class="d-lg-none"><i class="fas fa-times acc-close"></i></span></h6>
                         <ul class="account-menu">
                             <li><a href="order-status.html">My Order</a></li>
-                            <li><a href="order-status.html">Tracking Order</a></li>
+                            <li><a href="order-track.html">Tracking Order</a></li>
                             <li><a href="notification.html"><i class="far fa-bell"></i>Notification</a></li>
                             <li><a href="messages.html"><i class="far fa-envelope"></i>Messages</a></li>
                             <li><a href="ticket.html"><i class="fas fa-ticket-alt"></i>Ticket</a></li>
@@ -203,68 +202,78 @@
                         <div class="woo-sec-wpr p-2 px-3 mb-20 d-lg-none">
                             <span class="acc-expand"><i class="fas fa-user-alt ms-2"></i> My Account</span>
                         </div>
-                        <div class="woo-sec-wpr-2 mb-20 py-2 rounded-0">
-                            <h6 class="mb-0">Supported Ticket #123</h6>
+                        <div class="woo-sec-wpr-2 mb-4">
+                            <div class="woo-track-order">
+                                <h6 class="mb-4">Tracking Order</h6>
+                                <form class="voucher-code mb-3 text-end text-xxl-start">
+                                    <input type="text" placeholder="Order Id">
+                                    <button type="submit" class="voucher-btn mt-3 mt-xxl-0">TRACK</button>
+                                </form>
+                                <a href="track-details.html">
+                                    <div class="single-order-status mb-0">
+                                        <div class="product-status">
+                                            <p class="mb-3 text-primary">#HUS96544X</p>
+                                            <h6>US$199.99</h6>
+                                        </div>
+                                        <div class="text-end">
+                                            <div class="status-list mb-3">
+                                                <span class="status-item status-shipped">shipped</span>
+                                                <span class="status-item status-paid">paid</span>
+                                           </div>
+                                           <p>01/10/2021</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                        <div class="support-chat woo-chat-box mb-100">
-                            <div class="single-chat mb-3">
-                                <div class="chat-image">
-                                    <img src="images/chat-seller.jpg" alt="CS">
-                                    <p class="chat-time">10.10 am | January,21</p>
-                                </div>
-                                <div class="chat-details">
-                                    <p class="chat-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, incidunt.</p>
-                                </div>
-                            </div>
-                            <div class="single-chat custmr-chat mb-3">
-                                <div class="chat-image">
-                                    <img src="images/chat-customer.jpg" alt="CS">
-                                    <p class="chat-time">10.10 am | January,21</p>
-                                </div>
-                                <div class="chat-details">
-                                    <p class="chat-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, incidunt.</p>
-                                </div>
-                            </div>
-                            <div class="single-chat mb-3">
-                                <div class="chat-image">
-                                    <img src="images/chat-seller.jpg" alt="CS">
-                                    <p class="chat-time">10.10 am | January,21</p>
-                                </div>
-                                <div class="chat-details">
-                                    <p class="chat-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, incidunt.</p>
-                                </div>
-                            </div>
-                            <div class="single-chat custmr-chat mb-3">
-                                <div class="chat-image">
-                                    <img src="images/chat-customer.jpg" alt="CS">
-                                    <p class="chat-time">10.10 am | January,21</p>
-                                </div>
-                                <div class="chat-details">
-                                    <p class="chat-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, incidunt.</p>
-                                </div>
-                            </div>
-                            <div class="single-chat mb-3">
-                                <div class="chat-image">
-                                    <img src="images/chat-seller.jpg" alt="CS">
-                                    <p class="chat-time">10.10 am | January,21</p>
-                                </div>
-                                <div class="chat-details">
-                                    <p class="chat-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, incidunt.</p>
-                                </div>
-                            </div>
-                            <div class="single-chat custmr-chat mb-3">
-                                <div class="chat-image">
-                                    <img src="images/chat-customer.jpg" alt="CS">
-                                    <p class="chat-time">10.10 am | January,21</p>
-                                </div>
-                                <div class="chat-details">
-                                    <p class="chat-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, incidunt.</p>
-                                </div>
-                            </div>
-                            <div class="send-text text-end">
-                                <label for="send-chat" class="visually-hidden"></label>
-                                <input type="text" placeholder="Send Text" id="send-chat">
-                                <i class="fas fa-paper-plane mx-3"></i>
+                        <div class="woo-sec-wpr-2 mb-100">
+                            <div class="react-order-list">
+                                <h6 class="mb-4">Recent Orders</h6>
+                                <a href="track-details">
+                                    <div class="single-order-status">
+                                        <div class="product-status">
+                                            <p class="mb-3 text-primary">#HUS96544X</p>
+                                            <h6>US$199.99</h6>
+                                        </div>
+                                        <div class="text-end">
+                                            <div class="status-list mb-3">
+                                                <span class="status-item status-shipped">shipped</span>
+                                                <span class="status-item status-paid">paid</span>
+                                           </div>
+                                           <p>01/10/2021</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="track-details.html">
+                                    <div class="single-order-status">
+                                        <div class="product-status">
+                                            <p class="mb-3 text-primary">#HUS96544X</p>
+                                            <h6>US$199.99</h6>
+                                        </div>
+                                        <div class="text-end">
+                                            <div class="status-list mb-3">
+                                                <span class="status-item status-process">processing</span>
+                                                <span class="status-item status-unpaid">unpaid</span>
+                                           </div>
+                                           <p>01/10/2021</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="track-details.html">
+                                    <div class="single-order-status mb-0">
+                                        <div class="product-status">
+                                            <p class="mb-3 text-primary">#HUS96544X</p>
+                                            <h6>US$199.99</h6>
+                                        </div>
+                                        <div class="text-end">
+                                            <div class="status-list mb-3">
+                                                <span class="status-item status-pending">pending</span>
+                                                <span class="status-item status-paid">paid</span>
+                                           </div>
+                                           <p>01/10/2021</p>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                    </div>
