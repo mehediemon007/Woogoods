@@ -2583,6 +2583,70 @@ input[type="radio"]:checked::before{
     padding-left: 10px;
 }
 
+/* Message Box */
+
+.woo-chat-box{
+    position: relative;
+    background-color: var(--white-color);
+    padding: 20px;
+    clear: both;
+}
+
+.single-chat{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.custmr-chat{
+    align-items: flex-end;
+}
+
+.chat-image{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.chat-time{
+    font-size: .85rem;
+}
+
+.chat-image img{
+    border-radius: 50%;
+}
+
+.chat-text{
+    display: flex;
+    align-items: center;
+    min-height: 35px;
+    background-color: #F3F3F3;
+    padding: 8px;
+    border-radius: 0 5px 5px 5px;
+    margin-top: 10px;
+}
+
+.custmr-chat .chat-text{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius: 5px 0 5px 5px;
+}
+
+.send-text{
+    border-top: 1px solid rgb(0 0 0 / 10%);
+    margin-top: 20px;
+    padding-top: 16px;
+}
+
+#send-chat{
+    width: 40%;
+    min-height: 35px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding: 0 8px;
+}
 
 /* Footer */
 
