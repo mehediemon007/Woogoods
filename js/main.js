@@ -19,6 +19,7 @@
 
     $(".banner-sub-content .sub-content-items").owlCarousel({
         items:4,
+        loop:true,
         dots:false,
         nav:true,
         navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
@@ -54,6 +55,7 @@
 
     $(".six-column-slider").owlCarousel({
         items:6,
+        loop:true,
         dots:false,
         nav:true,
         navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
@@ -81,6 +83,7 @@
 
     $(".five-column-slider").owlCarousel({
         items:5,
+        loop:true,
         dots:false,
         nav:true,
         navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
@@ -464,6 +467,10 @@
             $(".filtered-products").addClass("list");
         })
     }
+
+    $(".disable").on("click",function(e){
+        e.preventDefault();
+    })
     
 })(jQuery);
 

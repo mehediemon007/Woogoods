@@ -1615,7 +1615,7 @@ input[type="checkbox"]:checked::after{
     margin-right: 8px;
 }
 
-.size-list span,
+.size-list a,
 .location-list span{
     display: inline-block;
     min-width: 28px;
@@ -1627,17 +1627,17 @@ input[type="checkbox"]:checked::after{
     cursor: pointer;
 }
 
-.size-list span:hover{
+.size-list a:hover{
     border-color: var(--primary-color);
 }
 
-.size-list span.active{
+.size-list a.active{
     color: var(--white-color);
     background-color: var(--primary-color);
     border-color: var(--primary-color);
 }
 
-.color-list span{
+.color-list a{
     display: inline-block;
     width: 28px;
     height: 28px;
@@ -1649,8 +1649,8 @@ input[type="checkbox"]:checked::after{
     cursor: pointer;
 }
 
-.color-list span:hover,
-.color-list span.active{
+.color-list a:hover,
+.color-list a.active{
     border-color: var(--primary-color);
 }
 
