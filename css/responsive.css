@@ -560,6 +560,19 @@
     #send-chat{
         width: 80%;
     }
+
+    .order-trace .single-progress-step{
+        margin-right: 48px;
+    }
+
+    .order-trace .single-progress-step span{
+        font-size: .8rem;
+    }
+
+    .order-trace .single-progress-step::after{
+        width: 48px;
+        left: 44px;
+    }
 }
 
 /* Max Width 575px */
@@ -706,6 +719,22 @@
         width: 100%;
         text-align: center;
     }
+
+    .order-trace .single-progress-step{
+        margin-right: 35px;
+    }
+
+    .order-trace .single-progress-step span{
+        display: inline-block;
+        max-width: 50px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .order-trace .single-progress-step::after{
+        width: 30px;
+        left: 38px;
+    }
     
     .footer-services{
         grid-template-columns: 1fr;
@@ -772,6 +801,16 @@
         grid-template-columns: repeat(3,1fr);
     }
 
+    .single-progress-step,
+    .order-trace .single-progress-step{
+        margin-right: 30px;
+    }
+
+    .single-progress-step:not(:last-of-type):after{
+        width: 28px;
+        left: 35px;
+    }
+
 }
 
 /* Max Width 320px */
@@ -817,13 +856,18 @@
         height: 40px;
     }
 
-    .single-progress-step{
+    .single-progress-step,
+    .order-trace .single-progress-step{
         margin-right: 24px;
     }
 
     .single-progress-step:not(:last-of-type):after{
         width: 24px;
         left: 32px;
+    }
+
+    .order-trace .single-progress-step span{
+        max-width: 45px;
     }
 
     .ordered-product{

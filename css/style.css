@@ -1921,6 +1921,17 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
     margin-right: 35px;
 }
 
+.order-trace .single-progress-step{
+    margin-right: 65px;
+    margin-bottom: 20px;
+}
+
+.order-trace .single-progress-step span{
+    position: absolute;
+    top: 100%;
+    margin-top: 8px;
+}
+
 .single-progress-step::before{
     position: absolute;
     content: "";
@@ -1960,6 +1971,13 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
     left: 38px;
     transform: translateX(-50%);
     background-color: #00A84F;
+}
+
+.order-trace .single-progress-step::after{
+
+    width: 65px;
+    left: 51px;
+    
 }
 
 .sec-toolbar{
