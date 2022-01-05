@@ -2189,6 +2189,10 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
     padding:8px 0;
 }
 
+.account-menu li a.active{
+    color: var(--primary-color);
+}
+
 .account-menu li a i{
     margin-right: 16px;
 }
