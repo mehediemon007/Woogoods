@@ -514,7 +514,7 @@
             showAlertBox();
             setTimeout(function(){
                 window.location.href = "shop-cart.html";
-            },4000)
+            },3000)
         })
 
     }
@@ -539,7 +539,7 @@
         }
         timer=setTimeout(function(){
             hideAlertBox();
-        },3000)
+        },2000)
      }
       
     function hideAlertBox(){

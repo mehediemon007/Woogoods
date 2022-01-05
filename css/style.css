@@ -2816,7 +2816,7 @@ table td, table th {
 	width: 100%;
 	box-sizing: border-box;
 	z-index: 11;
-	animation: hideMeter 3s linear;
+	animation: hideMeter 2s linear;
 }
 
 @keyframes hideMeter {
