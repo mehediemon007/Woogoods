@@ -355,6 +355,7 @@ input::placeholder{
     border-radius: 5px;
     text-align: center;
     line-height: 45px;
+    cursor: pointer;
 }
 
 .payment-widget{
@@ -687,7 +688,8 @@ span.product-quantity{
     margin: 1rem 0;
 }
   
-.shopping-cart .chechout-btn {
+.shopping-cart .chechout-btn,
+.send-btn {
     background-color: var(--primary-color);
     color: #fff;
     display: block;
@@ -2038,6 +2040,12 @@ ul.slider-thumb.slick-initialized.slick-slider.slick-vertical {
     background-color: transparent;
 }
 
+.contact-form input:not([type=checkbox]){
+    height: 40px;
+    border: 1px solid rgba(128,128,128,.5);
+    padding-left: 16px ;
+}
+
 .woo-input input::placeholder{
     font-size: .9rem;
     color: var(--text-color-light);
@@ -2683,6 +2691,12 @@ input[type="radio"]:checked::before{
     padding: 0 8px;
 }
 
+#user-cmnt{
+    width: 100%;
+    border: 1px solid rgba(128,128,128,.5);
+    padding: 16px;
+}
+
 /* Cpmpare Table */
 
 .table-responsive {
@@ -2748,25 +2762,26 @@ table td, table th {
 
 /* Success Alert Box */
 
-/* .hidden{
+.hidden{
 	visibility: hidden;
-} */
+}
 
 .alert-box{
-	position: absolute;
-    display: none;
+	position: fixed;
+    top: 0;
 	right:0;
 	background-color:#02a602;
 	font-size: 20px;
-	top:10px;
 	padding:15px 40px 15px 15px;
 	color:#ffffff;
 	min-width: 350px;
 	z-index:100;
 }
+
 .alert-box .close-alert{
-	font-size:20px;
+	font-size:1.5rem;
 	position: absolute;
+    color: var(--white-color);
 	right:10px;
 	top:15px;
 	cursor: pointer;
@@ -2783,7 +2798,7 @@ table td, table th {
 	width: 100%;
 	box-sizing: border-box;
 	z-index: 11;
-	animation: hideMeter 6s linear;
+	animation: hideMeter 3s linear;
 }
 
 @keyframes hideMeter {
@@ -2796,8 +2811,7 @@ table td, table th {
 }
 
 .alert-box.show{
-    display: block;
-	/* animation: showAlert 1s ease forwards; */
+	animation: showAlert 1s ease forwards;
 }
 
 @keyframes showAlert{

@@ -512,6 +512,9 @@
         myBtn.addEventListener("click",function () {
 
             showAlertBox();
+            setTimeout(function(){
+                window.location.href = "shop-cart.html";
+            },4000)
         })
 
     }
@@ -522,6 +525,7 @@
 
             hideAlertBox();
             clearTimeout(timer);
+            window.location.href = "shop-cart.html";
             
         })
     }
@@ -535,7 +539,7 @@
         }
         timer=setTimeout(function(){
             hideAlertBox();
-        },6000)
+        },3000)
      }
       
     function hideAlertBox(){
