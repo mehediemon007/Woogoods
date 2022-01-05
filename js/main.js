@@ -105,14 +105,7 @@
             }
         }
     })
-
-    $(".viewd-products").owlCarousel({
-        loop:true,
-        margin:10,
-        nav:false,
-        dots:false,
-    })
-
+    
     // Language Switcher  active
 
     $(".lang-switcher").on("click", function(e){
@@ -128,14 +121,45 @@
 
     //   Show More Content
 
-    $(".liked-products > .single-product").slice(0, 10).show();
-    $(".show-more-btn").on("click", function(e){
-        e.preventDefault()
-        $(".liked-products > .single-product:hidden").slice(0, 5).slideDown()
-        if ($(".liked-products > .single-product:hidden").length == 0) {
-            $(".show-more-btn").fadeOut('slow')
-        }
-    })
+    let windowWidth = $(window).width();
+
+    if(windowWidth < 1400  && windowWidth >=992){
+        $(".liked-products > .single-product").slice(0, 16).show();
+        $(".show-more-btn").on("click", function(e){
+            e.preventDefault()
+            $(".liked-products > .single-product:hidden").slice(0, 4).slideDown()
+            if ($(".liked-products > .single-product:hidden").length == 0) {
+                $(".show-more-btn").fadeOut('slow')
+            }
+        })
+    }else if(windowWidth >=768  && windowWidth <=991){
+        $(".liked-products > .single-product").slice(0, 12).show();
+        $(".show-more-btn").on("click", function(e){
+            e.preventDefault()
+            $(".liked-products > .single-product:hidden").slice(0, 6).slideDown()
+            if ($(".liked-products > .single-product:hidden").length == 0) {
+                $(".show-more-btn").fadeOut('slow')
+            }
+        })
+    }else if(windowWidth >320 && windowWidth <768 ){
+        $(".liked-products > .single-product").slice(0, 12).show();
+        $(".show-more-btn").on("click", function(e){
+            e.preventDefault()
+            $(".liked-products > .single-product:hidden").slice(0, 4).slideDown()
+            if ($(".liked-products > .single-product:hidden").length == 0) {
+                $(".show-more-btn").fadeOut('slow')
+            }
+        })
+    }else{
+        $(".liked-products > .single-product").slice(0, 10).show();
+        $(".show-more-btn").on("click", function(e){
+            e.preventDefault()
+            $(".liked-products > .single-product:hidden").slice(0, 5).slideDown()
+            if ($(".liked-products > .single-product:hidden").length == 0) {
+                $(".show-more-btn").fadeOut('slow')
+            }
+        })
+    }
 
     var path = window.location.pathname;
     var page = path.split("/").pop();
