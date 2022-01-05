@@ -2995,6 +2995,10 @@ table td, table th {
     color: var(--primary-color);
 }
 
+.colored-text:hover{
+    color: var(--primary-color);
+}
+
 .footer-bottom{
     padding: 40px 0;
     border-bottom: 1px solid var(--text-color-light);
