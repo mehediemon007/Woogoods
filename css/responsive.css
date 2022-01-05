@@ -700,6 +700,12 @@
     .single-track-item .content::after{
         left: -30px;
     }
+
+    .table td {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
     
     .footer-services{
         grid-template-columns: 1fr;
