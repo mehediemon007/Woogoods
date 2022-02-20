@@ -114,13 +114,13 @@
     $(".lang-switcher").on("click", function(e){
         e.preventDefault();
         $(".lang-list").toggleClass("lang-list-open");
-      });
-      $(".lang-list li").each(function(){
-          $(this).on("click", function(){
-              var logoSrc = $(this).children(".flag").children("img").attr("src"); 
-              $(".lang-switcher > .flag img").attr("src", logoSrc);
-          });
-      });
+    });
+    $(".lang-list li").each(function(){
+        $(this).on("click", function(){
+            var logoSrc = $(this).children(".flag").children("img").attr("src"); 
+            $(".lang-switcher > .flag img").attr("src", logoSrc);
+        });
+    });
 
     //   Show More Content
 
