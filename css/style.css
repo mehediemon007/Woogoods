@@ -1615,7 +1615,7 @@ input[type="checkbox"]:checked::after{
     margin-right: 8px;
 }
 
-.size-list a,
+.size-list label span,
 .location-list span{
     display: inline-block;
     min-width: 28px;
@@ -1627,31 +1627,34 @@ input[type="checkbox"]:checked::after{
     cursor: pointer;
 }
 
-.size-list a:hover{
-    border-color: var(--primary-color);
+.color-list input[type="radio"],
+.size-list input[type="radio"]{
+    display: none;
 }
 
-.size-list a.active{
+.size-list label span{
+    display: inline-block;
+    width: 35px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    background-color: transparent;
+}
+
+.size-list input[type="radio"]:checked + span{
     color: var(--white-color);
     background-color: var(--primary-color);
     border-color: var(--primary-color);
 }
 
-.color-list a{
-    display: inline-block;
-    width: 28px;
-    height: 28px;
+.color-list label img{
+    padding: 2px;
     border: 1px solid transparent;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 25px;
-    transition: var(--transition);
-    cursor: pointer;
 }
 
-.color-list a:hover,
-.color-list a.active{
-    border-color: var(--primary-color);
+.color-list input[type="radio"]:checked + img {
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;    
 }
 
 .cart-btns a{
