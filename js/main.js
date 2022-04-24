@@ -471,6 +471,17 @@
     $(".disable").on("click",function(e){
         e.preventDefault();
     })
+
+    // Video Slider
+
+    $(".video-list video").click(function(){
+        
+        $(this).addClass('active').siblings().removeClass('active');
+
+        let vidSrc = $(this).attr('src');
+
+        $(".product-video video").attr('src',vidSrc);
+    })
     
 })(jQuery);
 
