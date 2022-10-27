@@ -290,7 +290,7 @@
         });
     }
 
-    // Profile Pic
+    // Profile Pic And Docs Upload
 
     $(document).ready(function() {
 
@@ -315,6 +315,11 @@
         $(".upload-button").on('click', function() {
            $(".file-upload").click();
         });
+
+        $('#tic-doc').change(function() {
+            $('.upload-path').val($('#tic-doc')[0].files[0].name);
+        });
+        
     });
 
     // Sing In-Up Form
